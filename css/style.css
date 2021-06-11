@@ -58,14 +58,19 @@ main {
 #logo {
     float: left;
     font-size: 135%;
-    color: rgb(212, 208, 208);;
-    margin-right: 8%;
+    color: rgb(212, 208, 208);
+    transform: translateY(-55%);
     grid-area: logo;
+}
+
+.logo {
+    width: 20%;
+    transform: translateY(40%);
 }
 
 #search {
     float: right;
-    font-size: 135%;
+    font-size: 117%;
     color: rgb(212, 208, 208);
     grid-area: search;
 }
