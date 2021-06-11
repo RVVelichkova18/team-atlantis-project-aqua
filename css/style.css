@@ -107,7 +107,7 @@ main {
 }
 
 #search-button {
-    width: 40%;
+    width: 80%;
     font-size: 100%;
     padding: 0.6% 3% 0.8% 3%;
     border: none;
@@ -116,7 +116,21 @@ main {
     border-radius: 12px;
 }
 
-#search-icon {
-    width: 200%;
-    height: 200%;
+#search-button:hover > .search-text {
+    width: 60%;
+    padding: 0 6px;
+}
+
+.search-text {
+    transform: translateY(15%);
+    border: none;
+    background: none;
+    outline: none;
+    float: right;
+    padding: 0;
+    color: rgba(212, 208, 208);
+    font-size: 80%;
+    transition: 0.4s ;
+    line-height: 100%;
+    width: 0%;
 }
