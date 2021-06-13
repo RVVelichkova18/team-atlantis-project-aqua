@@ -14,7 +14,7 @@ main {
     grid-template-rows: 100% 100% 100%;
 }
 
-.nav, li, a {
+.nav, #search, #app, #logo, #home, #cameras, #facts, a{
     display: inline;
     text-decoration: none;
     list-style: none;
@@ -100,6 +100,7 @@ main {
     border: none;
     background-color: rgb(39, 39, 61);
     color: rgb(212, 208, 208);
+    border-radius: 12px;
 }
 
 #slogan {
@@ -138,4 +139,23 @@ main {
     transition: 0.4s ;
     line-height: 100%;
     width: 0%;
+}
+
+#app-image {
+    height: 60%;
+    padding: 10%;
+    float: left;
+}
+
+#birds-heading {
+    text-align: right;
+    margin-right: 4%;
+    margin-top: 11%;
+    font-size: 350%;
+    color: rgba(212, 208, 208);
+}
+
+.app-text {
+    list-style-image: url('../images/bullet.png');
+
 }
