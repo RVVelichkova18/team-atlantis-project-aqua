@@ -147,15 +147,18 @@ main {
     float: left;
 }
 
-#birds-heading {
-    text-align: right;
+#app-heading {
+    text-align: left;
     margin-right: 4%;
-    margin-top: 11%;
+    margin-top: 8%;
     font-size: 350%;
     color: rgba(212, 208, 208);
+    padding-bottom: 4%;
 }
 
 .app-text {
     list-style-image: url('../images/bullet.png');
-
+    color: rgba(212, 208, 208);
+    font-size: 120%;
+    
 }
