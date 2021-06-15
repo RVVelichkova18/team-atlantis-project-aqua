@@ -12,7 +12,7 @@ main {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100% 100% 100% 100% 100% 100%;
+    grid-template-rows: 100% 100% 200% 100% 100% 100%;
 }
 
 nav {
@@ -24,6 +24,7 @@ nav {
     min-height: 8vh;
     background-color: #2f2c2ca9;
     font-family: "Montserrat", sans-serif;
+    z-index: 1;
 }
 
 .logo {
@@ -283,6 +284,17 @@ nav {
     width: 10em;
     height: 15em;
 }
+
+
+#mapid {
+    margin-top: 5vh;
+    height: 800px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+}
+
 
 .card1 {
     width: 100%;
