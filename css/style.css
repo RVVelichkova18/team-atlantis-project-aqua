@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap");
 * {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -14,7 +13,14 @@ main {
     grid-template-rows: 100% 100% 100%;
 }
 
-.nav, #search, #app, #logo, #home, #cameras, #facts, a{
+.nav,
+#search,
+#app,
+#logo,
+#home,
+#cameras,
+#facts,
+a {
     display: inline;
     text-decoration: none;
     list-style: none;
@@ -87,6 +93,10 @@ main {
     background-color: rgb(9, 77, 100);
 }
 
+.section3 {
+    background-color: rgb(212, 208, 208);
+}
+
 #heading {
     text-align: center;
     font-size: 350%;
@@ -108,7 +118,7 @@ main {
     font-size: 35%;
     color: rgb(70, 70, 70);
     letter-spacing: 5px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
 }
 
@@ -122,7 +132,7 @@ main {
     border-radius: 12px;
 }
 
-#search-button:hover > .search-text {
+#search-button:hover>.search-text {
     width: 60%;
     padding: 0 6px;
 }
@@ -136,7 +146,7 @@ main {
     padding: 0;
     color: rgba(212, 208, 208);
     font-size: 80%;
-    transition: 0.4s ;
+    transition: 0.4s;
     line-height: 100%;
     width: 0%;
 }
@@ -157,8 +167,132 @@ main {
 }
 
 .app-text {
-    list-style-image: url('../images/bullet.png');
+    list-style-image: url("../images/bullet.png");
     color: rgba(212, 208, 208);
     font-size: 120%;
-    
+}
+
+
+/*Rotating cards*/
+
+.scene1 {
+    width: 10em;
+    height: 15em;
+    margin-top: 20%;
+}
+
+.scene2 {
+    width: 10em;
+    height: 15em;
+}
+
+.scene3 {
+    width: 10em;
+    height: 15em;
+}
+
+.scene4 {
+    width: 10em;
+    height: 15em;
+}
+
+.scene5 {
+    width: 10em;
+    height: 15em;
+}
+
+.card1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    margin-left: 50%;
+}
+
+.card2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    margin-left: 210%;
+    margin-top: -165%;
+}
+
+.card3 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    margin-left: 370%;
+    margin-top: -150%;
+}
+
+.card4 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    margin-left: 530%;
+    margin-top: -150%;
+}
+
+.card5 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    margin-left: 690%;
+    margin-top: -150%;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    line-height: 15em;
+    text-align: center;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    background-color: #b89ffb;
+}
+
+.back {
+    background-color: rgb(75, 75, 75);
+    transform: rotateY(180deg);
+}
+
+.scene1:hover .card1 {
+    transform: rotateY(180deg);
+}
+
+.scene2:hover .card2 {
+    transform: rotateY(180deg);
+}
+
+.scene3:hover .card3 {
+    transform: rotateY(180deg);
+}
+
+.scene4:hover .card4 {
+    transform: rotateY(180deg);
+}
+
+.scene5:hover .card5 {
+    transform: rotateY(180deg);
+}
+
+
+/*birds-pictures*/
+
+.bird {
+    width: 8em;
+    margin-top: 20%;
 }
