@@ -91,13 +91,12 @@ nav {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: #74c404b2;
+        background-color: #81c7e0;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 50%;
         transform: translateX(100%);
-        transition: transform 0.5s ease-out;
     }
     .nav-links li {
         opacity: 0;
