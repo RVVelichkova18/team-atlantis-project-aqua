@@ -265,34 +265,6 @@ nav {
 }
 
 
-/*Rotating cards*/
-
-.scene1 {
-    width: 10em;
-    height: 15em;
-    margin-top: 20%;
-}
-
-.scene2 {
-    width: 10em;
-    height: 15em;
-}
-
-.scene3 {
-    width: 10em;
-    height: 15em;
-}
-
-.scene4 {
-    width: 10em;
-    height: 15em;
-}
-
-.scene5 {
-    width: 10em;
-    height: 15em;
-}
-
 #mapid {
     margin-top: 5vh;
     height: 800px;
@@ -302,13 +274,27 @@ nav {
     z-index: 0;
 }
 
+/*Rotating cards*/
+
+#info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    gap: 1em 2em;
+    padding-top: 5%;
+}
+
+.scene1, .scene2, .scene3, .scene4, .scene5{
+    justify-self: center;
+    width: 10em;
+    height: 15em;
+}
+
 .card1 {
     width: 100%;
     height: 100%;
     position: relative;
     transition: transform 0.5s;
     transform-style: preserve-3d;
-    margin-left: 50%;
 }
 
 .card2 {
@@ -317,8 +303,6 @@ nav {
     position: relative;
     transition: transform 0.5s;
     transform-style: preserve-3d;
-    margin-left: 210%;
-    margin-top: -165%;
 }
 
 .card3 {
@@ -327,8 +311,6 @@ nav {
     position: relative;
     transition: transform 0.5s;
     transform-style: preserve-3d;
-    margin-left: 370%;
-    margin-top: -150%;
 }
 
 .card4 {
@@ -337,8 +319,6 @@ nav {
     position: relative;
     transition: transform 0.5s;
     transform-style: preserve-3d;
-    margin-left: 530%;
-    margin-top: -150%;
 }
 
 .card5 {
@@ -347,8 +327,6 @@ nav {
     position: relative;
     transition: transform 0.5s;
     transform-style: preserve-3d;
-    margin-left: 690%;
-    margin-top: -150%;
 }
 
 .face {
