@@ -4,9 +4,7 @@
 <head>
     <title>Atlantis</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +20,9 @@
                 <li><a href="#">Камери</a></li>
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Статистики</a></li>
-                <li><a href="#">Log in</a></li>
+                <li>
+                    <button id="login-button"><a href="#">Влез</a></button>
+                </li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -35,7 +35,7 @@
             <div id="heading">
                 <h1>AQUA</h1>
                 <p id="slogan">Спаси това, което спасява теб!</p>
-                <button id="download-button">Дай идея за опазване</button>
+                <button id="tips-button">Дай идея за опазване</button>
             </div>
         </section>
         <section class="section2">
@@ -45,7 +45,7 @@
         <section class="section3">
 
             <div id="mapid"></div>
-            
+
             <button id="search-button">
                 <i class="fas fa-search"></i> Търси
                 <input class="search-text" type="text" placeholder=". . .">
@@ -104,11 +104,9 @@
     </main>
 
     <script src="https://kit.fontawesome.com/58dbd7504d.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     <script src="JavaScript/map.js"></script>
-
+    <script src="JavaScript/main.js"></script>
 </body>
 
 </html>
