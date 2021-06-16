@@ -1,5 +1,29 @@
-let map = L.map('mapid', { minZoom: 10 }).setView([42.492985475830444, 27.465648651123047], 12);
+const info1 = document.querySelector('.info1');
+
+let map = L.map('mapid', { minZoom: 9 }).setView([42.48526384858916, 27.453460693359375], 11);
 
 L.tileLayer('https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
+
+let leafletIcon = L.icon ({
+    iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Disk_pack1.svg/1200px-Disk_pack1.svg.png',
+    iconSize: [20,20],
+    iconAnchor: [10,10],
+});
+
+let marker1 = L.marker([42.49944053092116, 27.40264892578125], { icon: leafletIcon }).addTo(map);
+
+let marker2 = L.marker([42.41053006572743, 27.377243041992188], { icon: leafletIcon }).addTo(map);
+
+let marker3 = L.marker([42.583295608141725, 27.470626831054688], { icon: leafletIcon }).addTo(map);
+
+let marker4 = L.marker([42.53195880664412, 27.479896545410156], { icon: leafletIcon }).addTo(map);
+
+let marker5 = L.marker([42.44407629523289, 27.46680736541748], { icon: leafletIcon }).addTo(map);
+
+let marker6 = L.marker([42.43345051374198, 27.470455169677734], { icon: leafletIcon }).addTo(map);
+
+marker1.on('click', function(e){
+    info1.style.display = "block";
+    });

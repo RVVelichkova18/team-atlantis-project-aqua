@@ -348,3 +348,32 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Temporary files
+.tmp
+.firebase
+firebase.json
+
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+# DS_Store
+.DS_Store
+
+# IDEs
+.idea
+entrypoint.hashmanifest.json
+.vscode/*
+
+# deploy scripts
+devsite.js
+local-devsite.js
+
+# next.js build output
+.next

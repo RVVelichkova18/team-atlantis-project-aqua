@@ -274,6 +274,25 @@ nav {
     z-index: 0;
 }
 
+.leaflet-control-attribution{
+    display: none;
+}
+
+.info1{
+    position: relative;
+    margin-top: -600px;
+    margin-left: 19%;
+    width: 60%;
+    height: 400px;
+    padding: 20px;
+    display: none;
+    background: rgb(50, 61, 109);
+    border: rgba(0, 0, 0, 0.219) .1px solid;
+    border-radius: 20px;
+    transition: 2s;
+    transition-delay: .6s;
+}
+
 /*Rotating cards*/
 
 #info-cards {
