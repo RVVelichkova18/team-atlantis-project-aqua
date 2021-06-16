@@ -454,13 +454,6 @@ footer {
 }
 
 
-/* The company logo */
-
-.footer-distributed .footer-left img {
-    width: 30%;
-}
-
-
 /* Footer links */
 
 .footer-distributed .footer-links {
@@ -568,12 +561,6 @@ footer {
     margin-right: 3px;
     margin-bottom: 5px;
 }
-
-
-/* Here is the code for Responsive Footer */
-
-
-/* You can remove below code if you don't want Footer to be responsive */
 
 @media (max-width: 880px) {
     .footer-distributed .footer-left,
