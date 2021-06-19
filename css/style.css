@@ -229,6 +229,11 @@ nav {
     padding: 0 6px;
 }
 
+.search-text:focus{
+    width: 60%;
+    padding: 0 6px;
+}
+
 .search-text {
     transform: translateY(15%);
     border: none;
@@ -371,35 +376,55 @@ nav {
     backface-visibility: hidden;
 }
 
-.front {
+.front1 {
     background-color: #f3d100;
+    transform: rotateY(0deg);
 }
 
-.back {
+.back1 {
     background-color: #017e5c;
     transform: rotateY(180deg);
 }
 
-.scene1:hover .card1 {
+.front2 {
+    background-color: #f3d100;
+    transform: rotateY(0deg);
+}
+
+.back2 {
+    background-color: #017e5c;
     transform: rotateY(180deg);
 }
 
-.scene2:hover .card2 {
+.front3 {
+    background-color: #f3d100;
+    transform: rotateY(0deg);
+}
+
+.back3 {
+    background-color: #017e5c;
     transform: rotateY(180deg);
 }
 
-.scene3:hover .card3 {
+.front4 {
+    background-color: #f3d100;
+    transform: rotateY(0deg);
+}
+
+.back4 {
+    background-color: #017e5c;
     transform: rotateY(180deg);
 }
 
-.scene4:hover .card4 {
-    transform: rotateY(180deg);
+.front5 {
+    background-color: #f3d100;
+    transform: rotateY(0deg);
 }
 
-.scene5:hover .card5 {
+.back5 {
+    background-color: #017e5c;
     transform: rotateY(180deg);
 }
-
 
 /*birds-pictures*/
 

@@ -33,6 +33,7 @@ marker1.on('click', function(e){
     exitButton.style.display = 'block';
 });
 
+//exit button
 exitButton.addEventListener('click', () =>{
     exitButton.style.display = 'none';
     info1.style.display = 'none';
