@@ -1,8 +1,10 @@
 const info1 = document.querySelector('.info1');
+const exitButton = document.querySelector('.exit-button');
 
+//initialize map
 let map = L.map('mapid', { minZoom: 9 }).setView([42.48526384858916, 27.453460693359375], 11);
 
-L.tileLayer('https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png', {
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
@@ -12,6 +14,7 @@ let leafletIcon = L.icon ({
     iconAnchor: [10,10],
 });
 
+//add markers
 let marker1 = L.marker([42.49944053092116, 27.40264892578125], { icon: leafletIcon }).addTo(map);
 
 let marker2 = L.marker([42.41053006572743, 27.377243041992188], { icon: leafletIcon }).addTo(map);
@@ -24,6 +27,13 @@ let marker5 = L.marker([42.44407629523289, 27.46680736541748], { icon: leafletIc
 
 let marker6 = L.marker([42.43345051374198, 27.470455169677734], { icon: leafletIcon }).addTo(map);
 
+//add marker onclick functions
 marker1.on('click', function(e){
-    info1.style.display = "block";
-    });
+    info1.style.display = 'block';
+    exitButton.style.display = 'block';
+});
+
+exitButton.addEventListener('click', () =>{
+    exitButton.style.display = 'none';
+    info1.style.display = 'none';
+})

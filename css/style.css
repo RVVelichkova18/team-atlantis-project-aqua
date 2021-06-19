@@ -280,17 +280,30 @@ nav {
 
 .info1{
     position: relative;
-    margin-top: -600px;
+    margin-top: -442px;
     margin-left: 19%;
     width: 60%;
     height: 400px;
     padding: 20px;
     display: none;
-    background: rgb(50, 61, 109);
-    border: rgba(0, 0, 0, 0.219) .1px solid;
-    border-radius: 20px;
-    transition: 2s;
-    transition-delay: .6s;
+    background: #007c94;;
+    border: rgba(0, 0, 0, 0.274) .1px solid;
+    border-radius:15px;
+}
+
+.exit-button{
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    cursor:pointer;
+    outline:none;
+    border:none;
+    border-radius: 15px;
+    padding: .8em 1em;
+    background: rgba(255, 255, 255, 0.144);
+    box-shadow: rgba(255, 255, 255, 0.342) 0px 0px 0px 0.5px inset;
+    color: white;
+    font-size: 1em;
 }
 
 /*Rotating cards*/
