@@ -15,12 +15,12 @@
     <main>
         <nav>
             <div class="logo">
-                <a href="#asd" class="logotext">Atlantis</a>
+                <a href="#home" class="logotext">Atlantis</a>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Камери</a></li>
-                <li><a href="#">Информация</a></li>
-                <li><a href="#">Статистики</a></li>
+                <li><a href="#cameras">Камери</a></li>
+                <li><a href="#info">Информация</a></li>
+                <li><a href="#stats">Статистики</a></li>
                 <li>
                     <button id="login-button"><a href="#">Влез</a></button>
                 </li>
@@ -32,7 +32,7 @@
             </div>
         </nav>
 
-        <section class="section1" id="asd">
+        <section class="section1" id="home">
             <div id="heading">
                 <h1>AQUA</h1>
                 <p id="slogan">Спаси това, което спасява теб!</p>
@@ -40,11 +40,11 @@
             </div>
         </section>
 
-        <section class="section2">
+        <section class="section2" id="cameras">
             <h1 id="birds-heading">Наблюдавай птиците в Бургас и ги пази</h1>
         </section>
 
-        <section class="section3">
+        <section class="section3" id="info">
 
             <div id="mapid"></div>
 
@@ -63,7 +63,7 @@
                         <div class="face front1">
                             <img class="bird" src="https://s.rfi.fr/media/display/b2309eec-0ec9-11ea-b521-005056a9aa4d/w:1280/p:1x1/bird-2695678_1920.jpg">
                         </div>
-                        <div class="face back1">TEXT 1</div>
+                        <div class="face back1"> <p class="cardText">TEXT 1</p></div>
                     </div>
                 </div>
 
@@ -72,7 +72,7 @@
                         <div class="face front2">
                             <img class="bird" src="https://s.rfi.fr/media/display/b2309eec-0ec9-11ea-b521-005056a9aa4d/w:1280/p:1x1/bird-2695678_1920.jpg">
                         </div>
-                        <div class="face back2">TEXT 2</div>
+                        <div class="face back2"><p class="cardText">TEXT 2</p></div>
                     </div>
                 </div>
 
@@ -81,7 +81,7 @@
                         <div class="face front3">
                             <img class="bird" src="https://s.rfi.fr/media/display/b2309eec-0ec9-11ea-b521-005056a9aa4d/w:1280/p:1x1/bird-2695678_1920.jpg">
                         </div>
-                        <div class="face back3">TEXT 3</div>
+                        <div class="face back3"><p class="cardText">TEXT 3</p></div>
                     </div>
                 </div>
 
@@ -90,7 +90,7 @@
                         <div class="face front4">
                             <img class="bird" src="https://s.rfi.fr/media/display/b2309eec-0ec9-11ea-b521-005056a9aa4d/w:1280/p:1x1/bird-2695678_1920.jpg">
                         </div>
-                        <div class="face back4">TEXT 4</div>
+                        <div class="face back4"><p class="cardText">TEXT 4</p></div>
                     </div>
                 </div>
 
@@ -99,14 +99,14 @@
                         <div class="face front5">
                             <img class="bird" src="https://s.rfi.fr/media/display/b2309eec-0ec9-11ea-b521-005056a9aa4d/w:1280/p:1x1/bird-2695678_1920.jpg">
                         </div>
-                        <div class="face back5">TEXT 5</div>
+                        <div class="face back5"><p class="cardText">TEXT 5</p></div>
                     </div>
                 </div>
             </div>
 
         </section>
 
-        <section class="section4">
+        <section class="section4" id="stats">
 
         </section>
 
@@ -167,6 +167,28 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     <script src="JavaScript/map.js"></script>
     <script src="JavaScript/main.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+
+    <script>
+    // Web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyAaFoJ4tFxEw0523v3Bp2J8KuTdJzqScUI",
+        authDomain: "atlantis-baab5.firebaseapp.com",
+        projectId: "atlantis-baab5",
+        storageBucket: "atlantis-baab5.appspot.com",
+        messagingSenderId: "295171315416",
+        appId: "1:295171315416:web:491c453cd30e1f2f9ce9ad",
+        measurementId: "G-JHKN7M7WLJ"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
 </body>
 
 </html>
