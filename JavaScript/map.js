@@ -9,9 +9,9 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 let leafletIcon = L.icon ({
-    iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Disk_pack1.svg/1200px-Disk_pack1.svg.png',
-    iconSize: [20,20],
-    iconAnchor: [10,10],
+    iconUrl: 'https://cdn.discordapp.com/attachments/851885485696876574/856223408814293012/map-pointer-icon-12.png',
+    iconSize: [40,40],
+    iconAnchor: [20,35],
 });
 
 //add markers
@@ -26,6 +26,8 @@ let marker4 = L.marker([42.53195880664412, 27.479896545410156], { icon: leafletI
 let marker5 = L.marker([42.44407629523289, 27.46680736541748], { icon: leafletIcon }).addTo(map);
 
 let marker6 = L.marker([42.43345051374198, 27.470455169677734], { icon: leafletIcon }).addTo(map);
+
+let marker7 = L.marker([42.59972457318483, 27.636966705322262], { icon: leafletIcon }).addTo(map);
 
 //add marker onclick functions
 marker1.on('click', function(e){
