@@ -33,11 +33,18 @@
         </nav>
 
         <section class="section1" id="home">
-            <div id="heading">
-                <h1>AQUA</h1>
-                <p id="slogan">Спаси това, което спасява теб!</p>
-                <button id="tips-button">Дай идея за опазване</button>
-            </div>
+            <img src="images/forest.png" id="forest">
+            <img src="images/rocks.png" id="rocks">
+            <img src="images/water.png" id="water">
+            <img src="images/bird1.png" id="bird1">
+            <img src="images/bird2.png" id="bird2">
+
+
+            <h1 id="heading">AQUA</h1>
+
+            <!--<p id="slogan">Спаси това, което спасява теб!</p>
+            <button id="tips-button">Дай идея за опазване</button>-->
+
         </section>
 
         <section class="section2" id="cameras">
@@ -56,14 +63,16 @@
                 <i class="fas fa-search"></i> Търси
                 <input class="search-text" type="text" placeholder=". . .">
             </button>
-            
+
             <div id="info-cards">
                 <div class="scene1">
                     <div class="card1">
                         <div class="face front1">
                             <img class="bird" src="https://s.rfi.fr/media/display/b2309eec-0ec9-11ea-b521-005056a9aa4d/w:1280/p:1x1/bird-2695678_1920.jpg">
                         </div>
-                        <div class="face back1"> <p class="cardText">TEXT 1</p></div>
+                        <div class="face back1">
+                            <p class="cardText">TEXT 1</p>
+                        </div>
                     </div>
                 </div>
 
@@ -72,7 +81,9 @@
                         <div class="face front2">
                             <img class="bird" src="https://s.rfi.fr/media/display/b2309eec-0ec9-11ea-b521-005056a9aa4d/w:1280/p:1x1/bird-2695678_1920.jpg">
                         </div>
-                        <div class="face back2"><p class="cardText">TEXT 2</p></div>
+                        <div class="face back2">
+                            <p class="cardText">TEXT 2</p>
+                        </div>
                     </div>
                 </div>
 
@@ -81,7 +92,9 @@
                         <div class="face front3">
                             <img class="bird" src="https://s.rfi.fr/media/display/b2309eec-0ec9-11ea-b521-005056a9aa4d/w:1280/p:1x1/bird-2695678_1920.jpg">
                         </div>
-                        <div class="face back3"><p class="cardText">TEXT 3</p></div>
+                        <div class="face back3">
+                            <p class="cardText">TEXT 3</p>
+                        </div>
                     </div>
                 </div>
 
@@ -90,7 +103,9 @@
                         <div class="face front4">
                             <img class="bird" src="https://s.rfi.fr/media/display/b2309eec-0ec9-11ea-b521-005056a9aa4d/w:1280/p:1x1/bird-2695678_1920.jpg">
                         </div>
-                        <div class="face back4"><p class="cardText">TEXT 4</p></div>
+                        <div class="face back4">
+                            <p class="cardText">TEXT 4</p>
+                        </div>
                     </div>
                 </div>
 
@@ -99,7 +114,9 @@
                         <div class="face front5">
                             <img class="bird" src="https://s.rfi.fr/media/display/b2309eec-0ec9-11ea-b521-005056a9aa4d/w:1280/p:1x1/bird-2695678_1920.jpg">
                         </div>
-                        <div class="face back5"><p class="cardText">TEXT 5</p></div>
+                        <div class="face back5">
+                            <p class="cardText">TEXT 5</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -122,10 +139,10 @@
                     <h3>Atlantis</h3>
 
                     <p class="footer-links">
-                        <a href="#">Начало</a> |
-                        <a href="#">Камери</a> |
-                        <a href="#">Информация</a> |
-                        <a href="#">Статистики</a>
+                        <a href="#home">Начало</a> |
+                        <a href="#cameras">Камери</a> |
+                        <a href="#info">Информация</a> |
+                        <a href="#stats">Статистики</a>
                     </p>
 
                     <p class="footer-company-name">© 2021 Atlantis - Спаси това, което спасява теб</p>
@@ -167,6 +184,7 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     <script src="JavaScript/map.js"></script>
     <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/parallax.js"></script>
 
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
     <!-- TODO: Add SDKs for Firebase products that you want to use
@@ -174,20 +192,20 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
 
     <script>
-    // Web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    var firebaseConfig = {
-        apiKey: "AIzaSyAaFoJ4tFxEw0523v3Bp2J8KuTdJzqScUI",
-        authDomain: "atlantis-baab5.firebaseapp.com",
-        projectId: "atlantis-baab5",
-        storageBucket: "atlantis-baab5.appspot.com",
-        messagingSenderId: "295171315416",
-        appId: "1:295171315416:web:491c453cd30e1f2f9ce9ad",
-        measurementId: "G-JHKN7M7WLJ"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
+        // Web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyAaFoJ4tFxEw0523v3Bp2J8KuTdJzqScUI",
+            authDomain: "atlantis-baab5.firebaseapp.com",
+            projectId: "atlantis-baab5",
+            storageBucket: "atlantis-baab5.appspot.com",
+            messagingSenderId: "295171315416",
+            appId: "1:295171315416:web:491c453cd30e1f2f9ce9ad",
+            measurementId: "G-JHKN7M7WLJ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
     </script>
 </body>
 

@@ -8,6 +8,10 @@
     text-decoration: none;
 }
 
+body {
+    min-height: 15000px;
+}
+
 main {
     height: 100vh;
     display: grid;
@@ -23,7 +27,7 @@ nav {
     align-items: center;
     min-height: 8vh;
     background-color: #007c94;
-    z-index: 1;
+    z-index: 100000;
 }
 
 .logo {
@@ -145,12 +149,51 @@ nav {
     grid-row: 1/2;
     grid-column: 1/3;
     background-color: #f6fcfc;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #017e5c, transparent);
+    z-index: 1000;
+}
+
+.section1:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017e5d59;
+    z-index: 1000;
+    mix-blend-mode: color;
+}
+
+.section1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
 }
 
 .section2 {
     grid-row: 2/3;
     grid-column: 1/3;
-    background-color: #049bb8;
+    background-color: #017e5c;
 }
 
 .section3 {
@@ -179,28 +222,35 @@ nav {
 
 #heading {
     text-align: center;
-    font-size: 350%;
-    padding-top: 14%;
+    font-size: 90px;
+    position: relative;
+    z-index: 1;
 }
 
-#tips-button {
-    width: 50vh;
-    font-size: 40%;
+#water {
+    z-index: 2;
+}
+
+
+/*#tips-button {
+    width: 30vh;
+    font-size: 12px;
     padding: 0.6% 3% 0.8% 3%;
     border: none;
     background-color: #00c0c3;
     color: #f6fcfc;
     border-radius: 12px;
+    z-index: 3;
 }
 
 #slogan {
-    text-align: center;
-    font-size: 35%;
+    font-size: 12px;
     color: #71c100;
     letter-spacing: 5px;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-}
+    z-index: 2;
+}*/
 
 #login-button {
     width: 15vh;
@@ -229,7 +279,7 @@ nav {
     padding: 0 6px;
 }
 
-.search-text:focus{
+.search-text:focus {
     width: 60%;
     padding: 0 6px;
 }
@@ -269,7 +319,6 @@ nav {
     font-size: 120%;
 }
 
-
 #mapid {
     margin-top: 5vh;
     height: 800px;
@@ -279,11 +328,11 @@ nav {
     z-index: 0;
 }
 
-.leaflet-control-attribution{
+.leaflet-control-attribution {
     display: none;
 }
 
-.info1{
+.info1 {
     position: relative;
     margin-top: -442px;
     margin-left: 19%;
@@ -291,18 +340,19 @@ nav {
     height: 400px;
     padding: 20px;
     display: none;
-    background: #007c94;;
+    background: #007c94;
+    ;
     border: rgba(0, 0, 0, 0.274) .1px solid;
-    border-radius:15px;
+    border-radius: 15px;
 }
 
-.exit-button{
+.exit-button {
     position: absolute;
     right: -1px;
     top: -1px;
-    cursor:pointer;
-    outline:none;
-    border:none;
+    cursor: pointer;
+    outline: none;
+    border: none;
     border-radius: 15px;
     padding: .8em 1em;
     background: rgba(255, 255, 255, 0.144);
@@ -310,6 +360,7 @@ nav {
     color: white;
     font-size: 1em;
 }
+
 
 /*Rotating cards*/
 
@@ -320,7 +371,11 @@ nav {
     padding-top: 5%;
 }
 
-.scene1, .scene2, .scene3, .scene4, .scene5{
+.scene1,
+.scene2,
+.scene3,
+.scene4,
+.scene5 {
     justify-self: center;
     width: 10em;
     height: 15em;
@@ -425,6 +480,7 @@ nav {
     background-color: #017e5c;
     transform: rotateY(180deg);
 }
+
 
 /*birds-pictures*/
 
@@ -608,4 +664,9 @@ footer {
     .footer-distributed .footer-center i {
         margin-left: 0;
     }
+}
+
+
+}
+
 }
