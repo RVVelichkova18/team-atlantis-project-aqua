@@ -202,6 +202,7 @@
     <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
 
     <script>
         // Web app's Firebase configuration
@@ -218,6 +219,18 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
+
+        document.getElementById('login-button').addEventListener('click', GoogleLogin);
+        let provider = new firebase.auth.GoogleAuthProvider();
+
+        function GoogleLogin(){
+            console.log("yes");
+            firebase.auth().signInWithPopup(provider).then(res=>{
+                console.log(res);
+            }).catch(e=>{
+                console.log(e);
+            })
+        }
     </script>
 </body>
 
