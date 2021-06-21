@@ -425,7 +425,7 @@ nav {
     width: 100%;
     height: 100%;
     color: #f6fcfc;
-    line-height: 15em;
+    
     text-align: center;
     position: absolute;
     backface-visibility: hidden;
@@ -664,6 +664,24 @@ footer {
     .footer-distributed .footer-center i {
         margin-left: 0;
     }
+}
+
+.birds-links {
+    text-decoration: none;
+    color: yellow;
+    padding-top: 5px;
+}
+
+.cardText {
+    padding: 7px;
+    font-size: 15px;
+}
+
+.birds-names {
+    padding-top: 10px;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 
