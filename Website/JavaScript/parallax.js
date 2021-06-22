@@ -9,5 +9,6 @@ window.addEventListener('scroll', function() {
     bird1.style.left = value * 0.5 + 'px';
     bird2.style.left = -value * 0.5 + 'px';
     rocks.style.top = -value * 0.1 + 'px';
-    heading.style.top = value * 0.4 + 'px';
+    heading.style.top = value * 0.6 + 'px';
+
 })
