@@ -262,6 +262,17 @@ nav {
     border-radius: 10px;
 }
 
+#logout-button {
+    width: 15vh;
+    font-size: 40%;
+    padding: 0.6% 3% 0.8% 3%;
+    border: none;
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 10px;
+    display: none;
+}
+
 #search-button {
     margin-top: 5%;
     margin-left: 30%;
@@ -682,9 +693,4 @@ footer {
     color: black;
     font-size: 22px;
     font-weight: bold;
-}
-
-
-}
-
 }

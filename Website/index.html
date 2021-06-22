@@ -22,7 +22,10 @@
                 <li><a href="#info">Информация</a></li>
                 <li><a href="#stats">Статистики</a></li>
                 <li>
-                    <button id="login-button"><a href="#">Влез</a></button>
+                    <button id="login-button"><a href="#" id="login">Влез</a></button>
+                </li>
+                <li>
+                    <button id="logout-button"> <a href="#" id="logout">Излез</a></button>
                 </li>
             </ul>
             <div class="burger">
@@ -219,19 +222,8 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
-
-        document.getElementById('login-button').addEventListener('click', GoogleLogin);
-        let provider = new firebase.auth.GoogleAuthProvider();
-
-        function GoogleLogin(){
-            console.log("yes");
-            firebase.auth().signInWithPopup(provider).then(res=>{
-                console.log(res);
-            }).catch(e=>{
-                console.log(e);
-            })
-        }
     </script>
+    <script src="JavaScript/firebase-features.js" defer></script>
 </body>
 
 </html>
