@@ -8,6 +8,23 @@
     text-decoration: none;
 }
 
+
+body::-webkit-scrollbar {
+    width: 11px;
+}
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #90A4AE #CFD8DC;;
+}
+    body::-webkit-scrollbar-track {
+    background: #CFD8DC;;
+}
+    body::-webkit-scrollbar-thumb {
+    background-color: #90A4AE ;
+    border-radius: 6px;
+    border: 3px solid #CFD8DC;;
+}
+
 main {
     height: 100vh;
     display: grid;
