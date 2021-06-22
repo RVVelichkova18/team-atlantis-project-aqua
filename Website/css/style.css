@@ -499,6 +499,7 @@ nav {
     color: #f6fcfc;
     text-align: center;
     margin-top: 70px;
+    margin-bottom: 60px;
 }
 
 
@@ -688,4 +689,34 @@ footer {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 2px;
+}
+
+#live-video-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+#live-video {
+    margin-left: 70px;
+    width: 600px;
+    height: 315px;
+}
+
+#cameras-text {
+    text-align: center;
+    font-size: 30px;
+    color: #f6fcfc;
+    margin-bottom: 30px;
+}
+
+#save-the-birds {
+    margin-right: 70px;
+}
+
+#save-the-birds-text {
+    margin-bottom: 40px;
+    width: 500px;
+    text-align: justify;
+    margin-top: 30px;
 }
