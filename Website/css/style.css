@@ -820,6 +820,40 @@
         text-align: justify;
         margin-top: 30px;
     }
+
+    @media (max-width: 1270px) {
+        #live-video {
+            width: 500px;
+            height: 290px;
+        }
+    }
+    @media (max-width: 1200px) {
+        #live-video {
+            width: 400px;
+            height: 250px;
+        }
+    }
+    @media (max-width: 1090px) {
+        #live-video-grid {
+            display: block;
+        }
+
+        #video-container {
+            width: 90%;
+            height: 90%;
+        }
+        #live-video {
+            width: 100%;
+            height: 70%;
+        }
+
+        #save-the-birds-text {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            text-align: center;
+        }
+    }
     
     #chartdiv {
         width: 100%;
