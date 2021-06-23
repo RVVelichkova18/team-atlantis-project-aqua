@@ -387,15 +387,8 @@
     #info-cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
-        gap: 1em 2em;
-        padding-top: 5%;
-    }
-    
-    #info-cards2 {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
-        gap: 1em 2em;
-        padding-top: 5%;
+        gap: 1em 5em;
+        padding: 5% 10% 0 10%;
     }
     
     .scene1,
