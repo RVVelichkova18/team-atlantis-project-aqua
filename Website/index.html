@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <link rel="manifest" href="../manifest.json">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -343,6 +344,12 @@
         firebase.analytics();
     </script>
     <script src="JavaScript/firebase-features.js" defer></script>
+
+    <script>
+        if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('../serviceWorker.js');
+        }
+    </script>
 </body>
 
 </html>
