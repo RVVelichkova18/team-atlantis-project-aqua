@@ -810,6 +810,14 @@
         margin-bottom: 30px;
     }
     
+    #map-text {
+        text-align: center;
+        font-size: 30px;
+        color: #f6fcfc;
+        margin-bottom: 30px;
+        margin-top: 70px;
+    }
+    
     #save-the-birds {
         margin-right: 70px;
     }
