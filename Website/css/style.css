@@ -807,7 +807,7 @@
     #cameras-text {
         text-align: center;
         font-size: 30px;
-        color: #f6fcfc;
+        color: #005566;
         margin-bottom: 30px;
     }
     
@@ -828,6 +828,8 @@
         width: 500px;
         text-align: justify;
         margin-top: 30px;
+        color: #f6fcfc;
+        line-height: 28px;
     }
     
     @media (max-width: 1270px) {
