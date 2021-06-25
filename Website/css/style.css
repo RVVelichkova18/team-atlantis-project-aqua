@@ -1,3 +1,16 @@
+    :root {
+        --white: #f6fcfc;
+        --lightblue: #81c7e0;
+        --mediumblue: #00b8de;
+        --darkteal: #007c94;
+        --ashblue: #617ca9;
+        --darkblue: #003479;
+        --lightteal: #00c0c3;
+        --drakgreen: #017e5c;
+        --lightgreen: #8ed32f;
+        --yellow: #f3d100;
+    }
+
     @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto+Mono:wght@300&display=swap');
     @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap");
     * {
@@ -44,7 +57,7 @@
         justify-content: space-around;
         align-items: center;
         min-height: 8vh;
-        background-color: #007c94;
+        background-color: var(--darkteal);
         z-index: 4;
     }
     
@@ -55,7 +68,7 @@
     }
     
     .logotext {
-        color: #f6fcfc;
+        color: var(--white);
     }
     
     .nav-links {
@@ -72,7 +85,7 @@
     }
     
     .nav-links a {
-        color: #f6fcfc;
+        color: var(--white);
         text-decoration: none;
         letter-spacing: 3px;
         font-weight: bold;
@@ -93,7 +106,7 @@
     .burger div {
         width: 25px;
         height: 3px;
-        background-color: #f6fcfc;
+        background-color: var(--white);
         margin: 5px;
         transition: all 0.3s ease;
     }
@@ -113,7 +126,7 @@
             right: 0px;
             height: 92vh;
             top: 8vh;
-            background-color: #81c7e0;
+            background-color: var(--lightblue);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -159,14 +172,14 @@
     #search {
         float: right;
         font-size: 117%;
-        color: #f6fcfc;
+        color: var(--white);
         grid-area: search;
     }
     
     .section1 {
         grid-row: 1/2;
         grid-column: 1/3;
-        background-color: #f6fcfc;
+        background-color: var(--white);
         position: relative;
         width: 100%;
         height: 100vh;
@@ -182,7 +195,7 @@
         bottom: 0;
         width: 100%;
         height: 100px;
-        background: linear-gradient(to top, #00c0c3, transparent);
+        background: linear-gradient(to top, var(--lightteal), transparent);
         z-index: 3;
     }
     
@@ -211,13 +224,13 @@
     .section2 {
         grid-row: 2/3;
         grid-column: 1/3;
-        background-color: #00c0c3;
+        background-color: var(--lightteal);
     }
     
     .section3 {
         grid-row: 3/4;
         grid-column: 1/3;
-        background-color: #00b8de;
+        background-color: var(--mediumblue);
     }
     
     .section4 {
@@ -229,7 +242,7 @@
     .section5 {
         grid-row: 6/7;
         grid-column: 1/3;
-        background-color: #f6fcfc;
+        background-color: var(--white);
     }
     
     #heading {
@@ -253,8 +266,8 @@
         font-size: 22px;
         padding: 0.8% 3% 1.2% 4%;
         border: none;
-        background-color: #8ed32f;
-        color: #f6fcfc;
+        background-color: var(--lightgreen);
+        color: var(--white);
         border-radius: 12px;
         z-index: 3;
         display: block;
@@ -268,8 +281,8 @@
         font-size: 40%;
         padding: 0.6% 3% 0.8% 3%;
         border: none;
-        background-color: #8ed32f;
-        color: #f6fcfc;
+        background-color: var(--lightgreen);
+        color: var(--white);
         border-radius: 10px;
     }
     
@@ -291,8 +304,8 @@
         font-size: 100%;
         padding: 0.6% 3% 0.8% 3%;
         border: none;
-        background-color: #007c94;
-        color: #f6fcfc;
+        background-color: var(--darkteal);
+        color: var(--white);
         border-radius: 12px;
     }
     
@@ -313,7 +326,7 @@
         outline: none;
         float: right;
         padding: 0;
-        color: #f6fcfc;
+        color: var(--white);
         font-size: 80%;
         transition: 0.4s;
         line-height: 100%;
@@ -331,13 +344,13 @@
         margin-right: 4%;
         margin-top: 8%;
         font-size: 350%;
-        color: #f6fcfc;
+        color: var(--white);
         padding-bottom: 4%;
     }
     
     .app-text {
         list-style-image: url("../images/bullet.png");
-        color: #f6fcfc;
+        color: var(--white);
         font-size: 120%;
     }
     
@@ -362,7 +375,7 @@
         height: 400px;
         padding: 20px;
         display: none;
-        background: #007c94;
+        background: var(--darkteal);
         ;
         border: rgba(0, 0, 0, 0.274) .1px solid;
         border-radius: 15px;
@@ -489,109 +502,109 @@
     .face {
         width: 100%;
         height: 100%;
-        color: #f6fcfc;
+        color: var(--white);
         text-align: center;
         position: absolute;
         backface-visibility: hidden;
     }
     
     .front1 {
-        background-color: #f6fcfc;
+        background-color: var(--white);
         transform: rotateY(0deg);
     }
     
     .back1 {
-        background-color: #617CA9;
+        background-color: var(--ashblue);
         transform: rotateY(180deg);
     }
     
     .front2 {
-        background-color: #f6fcfc;
+        background-color: var(--white);
         transform: rotateY(0deg);
     }
     
     .back2 {
-        background-color: #617CA9;
+        background-color: var(--ashblue);
         transform: rotateY(180deg);
     }
     
     .front3 {
-        background-color: #f6fcfc;
+        background-color: var(--white);
         transform: rotateY(0deg);
     }
     
     .back3 {
-        background-color: #617CA9;
+        background-color: var(--ashblue);
         transform: rotateY(180deg);
     }
     
     .front4 {
-        background-color: #f6fcfc;
+        background-color: var(--white);
         transform: rotateY(0deg);
     }
     
     .back4 {
-        background-color: #617CA9;
+        background-color: var(--ashblue);
         transform: rotateY(180deg);
     }
     
     .front5 {
-        background-color: #f6fcfc;
+        background-color: var(--white);
         transform: rotateY(0deg);
     }
     
     .back5 {
-        background-color: #617CA9;
+        background-color: var(--ashblue);
         transform: rotateY(180deg);
     }
     
     .front6 {
-        background-color: #f6fcfc;
+        background-color: var(--white);
         transform: rotateY(0deg);
     }
     
     .back6 {
-        background-color: #617CA9;
+        background-color: var(--ashblue);
         transform: rotateY(180deg);
     }
     
     .front7 {
-        background-color: #f6fcfc;
+        background-color: var(--white);
         transform: rotateY(0deg);
     }
     
     .back7 {
-        background-color: #617CA9;
+        background-color: var(--ashblue);
         transform: rotateY(180deg);
     }
     
     .front8 {
-        background-color: #f6fcfc;
+        background-color: var(--white);
         transform: rotateY(0deg);
     }
     
     .back8 {
-        background-color: #617CA9;
+        background-color: var(--ashblue);
         transform: rotateY(180deg);
     }
     
     .front9 {
-        background-color: #f6fcfc;
+        background-color: var(--white);
         transform: rotateY(0deg);
     }
     
     .back9 {
-        background-color: #617CA9;
+        background-color: var(--ashblue);
         transform: rotateY(180deg);
     }
     
     .front10 {
-        background-color: #f6fcfc;
+        background-color: var(--white);
         transform: rotateY(0deg);
     }
     
     .back10 {
-        background-color: #617CA9;
+        background-color: var(--ashblue);
         transform: rotateY(180deg);
     }
     /*birds-pictures*/
@@ -603,7 +616,7 @@
     
     #birds-heading {
         font-size: 60px;
-        color: #f6fcfc;
+        color: var(--white);
         text-align: center;
         margin-top: 70px;
         margin-bottom: 60px;
@@ -625,7 +638,7 @@
     }
     
     .footer-distributed {
-        background-color: #007c94;
+        background-color: var(--darkteal);
         box-sizing: border-box;
         width: 100%;
         text-align: left;
@@ -647,14 +660,14 @@
     }
     
     .footer-distributed h3 {
-        color: #f6fcfc;
+        color: var(--white);
         font-size: 36px;
         margin: 0;
     }
     /* Footer links */
     
     .footer-distributed .footer-links {
-        color: #f6fcfc;
+        color: var(--white);
         margin: 20px 0 12px;
     }
     
@@ -666,7 +679,7 @@
     }
     
     .footer-distributed .footer-company-name {
-        color: #81c7e0;
+        color: var(--lightblue);
         font-size: 14px;
         font-weight: normal;
         margin: 0;
@@ -678,8 +691,8 @@
     }
     
     .footer-distributed .footer-center i {
-        background-color: #007c94;
-        color: #f6fcfc;
+        background-color: var(--darkteal);
+        color: var(--white);
         font-size: 25px;
         width: 38px;
         height: 38px;
@@ -697,7 +710,7 @@
     
     .footer-distributed .footer-center p {
         display: inline-block;
-        color: #f6fcfc;
+        color: var(--white);
         vertical-align: middle;
         margin: 0;
     }
@@ -710,7 +723,7 @@
     }
     
     .footer-distributed .footer-center p a {
-        color: #f3d100;
+        color: var(--yellow);
         text-decoration: none;
     }
     /* Footer Right */
@@ -721,7 +734,7 @@
     
     .footer-distributed .footer-company-about {
         line-height: 20px;
-        color: #81c7e0;
+        color: var(--lightblue);
         font-size: 15px;
         font-weight: normal;
         margin: 0;
@@ -729,7 +742,7 @@
     
     .footer-distributed .footer-company-about span {
         display: block;
-        color: #f6fcfc;
+        color: var(--white);
         font-size: 18px;
         font-weight: bold;
         margin-bottom: 20px;
@@ -744,10 +757,10 @@
         width: 35px;
         height: 35px;
         cursor: pointer;
-        background-color: #007c94;
+        background-color: var(--darkteal);
         border-radius: 2px;
         font-size: 20px;
-        color: #f6fcfc;
+        color: var(--white);
         text-align: center;
         line-height: 35px;
         margin-right: 3px;
@@ -785,7 +798,7 @@
     
     .birds-names {
         padding-top: 10px;
-        color: #017e5c;
+        color: var(--drakgreen);
         font-size: 18px;
         font-weight: bold;
         letter-spacing: 2px;
@@ -814,7 +827,7 @@
     #map-text {
         text-align: center;
         font-size: 30px;
-        color: #f6fcfc;
+        color: var(--white);
         margin-bottom: 30px;
         margin-top: 70px;
     }
@@ -828,7 +841,7 @@
         width: 500px;
         text-align: justify;
         margin-top: 30px;
-        color: #f6fcfc;
+        color: var(--white);
         line-height: 28px;
     }
     
