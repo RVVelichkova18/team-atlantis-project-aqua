@@ -798,9 +798,10 @@
     }
     
     #live-video {
-        margin-left: 70px;
+        margin-top: -20px;
+        margin-left: 130px;
         width: 600px;
-        height: 315px;
+        height: 340px;
     }
     
     #cameras-text {
