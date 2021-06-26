@@ -3,6 +3,7 @@
 #include <string>
 #include <vector>
 #include "LAKE_STRUCTURE.h"
+#include "FUNCTIONS.h"
 
 class LAKE
 {
@@ -18,6 +19,7 @@ private:
 
 public:
 	ORGANIC() { this->depth = "ORGANIC"; }
+	void enterData(std::vector<LAKE_STRUCTURE> lake) { lake = enterLake(); }
 
 //TABLE 1
 };
@@ -29,6 +31,7 @@ private:
 
 public:
 	GLACIAL() { this->depth = "GLACIAL"; }
+	void enterData(std::vector<LAKE_STRUCTURE> lake) { lake = enterLake(); }
 
 //TABLE 2
 };
@@ -40,6 +43,7 @@ private:
 
 public:
 	LANDSLIDE() { this->depth = "LANDSLIDE"; }
+	void enterData(std::vector<LAKE_STRUCTURE> lake) { lake = enterLake(); }
 
 //TABLE 3
 };
