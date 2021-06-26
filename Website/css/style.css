@@ -880,6 +880,17 @@
         #tips-button {
             margin-bottom: 7%;
         }
+
+        #search-button {
+            width: 80%;
+            height: 1%;
+            display: block;
+            margin: 7% auto 1% auto;
+        }
+
+        .section3 {
+            padding-bottom: 7%;
+        }
     }
     
     #chartdiv1 {
