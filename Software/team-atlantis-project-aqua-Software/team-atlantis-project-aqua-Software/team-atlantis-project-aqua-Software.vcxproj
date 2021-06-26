@@ -139,15 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BIRD.cpp" />
     <ClCompile Include="FUNCTIONS.cpp" />
-    <ClCompile Include="LAKE.cpp" />
     <ClCompile Include="team-atlantis-project-aqua-Software.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BIRD.h" />
+    <ClInclude Include="BIRD_CLASS.h" />
+    <ClInclude Include="BIRD_STRUCTURE.h" />
     <ClInclude Include="FUNCTIONS.h" />
-    <ClInclude Include="LAKE.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

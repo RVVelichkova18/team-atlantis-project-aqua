@@ -2,16 +2,14 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "BIRD.h"
-#include "LAKE.h"
 #include "FUNCTIONS.h"
 using namespace std;
 
 bool flag;
 
-bool mainMenu(BIRD* bird, LAKE* lake)
+bool mainMenu()
 {
-	//system("CLS");
+	system("CLS");
 	cout << endl;
 	cout << "/-----------------------------\\" << endl;
 	cout << "|   Welcome to Project-Aqua!   |" << endl;
@@ -44,10 +42,7 @@ bool mainMenu(BIRD* bird, LAKE* lake)
 
 int main()
 {
-    BIRD* bird;
-    LAKE* lake;
-
     do {
-        flag = mainMenu(bird, lake);
+        flag = mainMenu();
     } while (flag);
 }

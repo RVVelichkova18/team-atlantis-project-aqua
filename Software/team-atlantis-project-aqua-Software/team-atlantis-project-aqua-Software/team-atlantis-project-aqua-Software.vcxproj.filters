@@ -18,24 +18,18 @@
     <ClCompile Include="team-atlantis-project-aqua-Software.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BIRD.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LAKE.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="FUNCTIONS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LAKE.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BIRD.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="FUNCTIONS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BIRD_CLASS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BIRD_STRUCTURE.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
