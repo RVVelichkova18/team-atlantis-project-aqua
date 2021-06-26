@@ -1,5 +1,17 @@
 const info1 = document.querySelector('.info1');
+const info2 = document.querySelector('.info2');
+const info3 = document.querySelector('.info3');
+const info4 = document.querySelector('.info4');
+const info5 = document.querySelector('.info5');
+const info6 = document.querySelector('.info6');
+const info7 = document.querySelector('.info7');
 const exitButton = document.querySelector('.exit-button');
+const exitButton1 = document.querySelector('.exit-button1');
+const exitButton2 = document.querySelector('.exit-button2');
+const exitButton3 = document.querySelector('.exit-button3');
+const exitButton4 = document.querySelector('.exit-button4');
+const exitButton5 = document.querySelector('.exit-button5');
+const exitButton6 = document.querySelector('.exit-button6');
 
 //initialize map
 let map = L.map('mapid', { minZoom: 9 }).setView([42.48526384858916, 27.453460693359375], 11);
@@ -35,8 +47,70 @@ marker1.on('click', function(e){
     exitButton.style.display = 'block';
 });
 
+marker2.on('click', function(e){
+    info2.style.display = 'block';
+    exitButton1.style.display = 'block';
+});
+
+marker3.on('click', function(e){
+    info3.style.display = 'block';
+    exitButton2.style.display = 'block';
+});
+
+marker4.on('click', function(e){
+    info4.style.display = 'block';
+    exitButton3.style.display = 'block';
+});
+
+marker5.on('click', function(e){
+    info5.style.display = 'block';
+    exitButton4.style.display = 'block';
+});
+
+marker6.on('click', function(e){
+    info6.style.display = 'block';
+    exitButton5.style.display = 'block';
+});
+
+marker7.on('click', function(e){
+    info7.style.display = 'block';
+    exitButton6.style.display = 'block';
+});
 //exit button
 exitButton.addEventListener('click', () =>{
     exitButton.style.display = 'none';
     info1.style.display = 'none';
 })
+
+exitButton1.addEventListener('click', () =>{
+    exitButton1.style.display = 'none';
+    info2.style.display = 'none';
+})
+
+exitButton2.addEventListener('click', () =>{
+    exitButton2.style.display = 'none';
+    info3.style.display = 'none';
+})
+
+exitButton3.addEventListener('click', () =>{
+    exitButton3.style.display = 'none';
+    info4.style.display = 'none';
+})
+
+exitButton4.addEventListener('click', () =>{
+    exitButton4.style.display = 'none';
+    info5.style.display = 'none';
+})
+
+exitButton5.addEventListener('click', () =>{
+    exitButton5.style.display = 'none';
+    info6.style.display = 'none';
+})
+
+
+exitButton6.addEventListener('click', () =>{
+    exitButton6.style.display = 'none';
+    info7.style.display = 'none';
+})
+
+

@@ -496,9 +496,10 @@
         display: none;
     }
     
-    .info1 {
+    .info1, .info2, .info3, .info4, .info5, .info6, .info7 {
         position: relative;
-        margin-top: -442px;
+        margin-top: -542px;
+        margin-bottom: 100px;
         margin-left: 19%;
         width: 60%;
         height: 400px;
@@ -509,7 +510,7 @@
         border-radius: 15px;
     }
 
-    .exit-button {
+    .exit-button, .exit-button1, .exit-button2, .exit-button3, .exit-button4, .exit-button5, .exit-button6 {
         position: absolute;
         right: -1px;
         top: -1px;
