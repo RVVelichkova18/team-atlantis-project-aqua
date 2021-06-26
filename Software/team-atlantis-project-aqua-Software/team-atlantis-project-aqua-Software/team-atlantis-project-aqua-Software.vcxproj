@@ -140,7 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="FUNCTIONS.cpp" />
-    <ClCompile Include="team-atlantis-project-aqua-Software.cpp" />
+    <ClCompile Include="mainMenu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BIRD_CLASS.h" />
@@ -148,6 +148,10 @@
     <ClInclude Include="FUNCTIONS.h" />
     <ClInclude Include="LAKE_CLASS.h" />
     <ClInclude Include="LAKE_STRUCTURE.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BirdClassDiagram.cd" />
+    <None Include="LakeClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
