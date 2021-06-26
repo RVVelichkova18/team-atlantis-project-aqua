@@ -19,7 +19,7 @@ private:
 
 public:
 	SWIM() { this->ability = "Swim"; }
-	void enterData(std::vector<BIRD_STRUCTURE> bird) { bird = enterBird(); }
+	//void enterData(std::vector<BIRD_STRUCTURE> bird) { bird = enterBird(); }
 
 //Table Swim
 };
@@ -31,7 +31,7 @@ private:
 
 public:
 	RUN() { this->ability = "Run"; }
-	void enterData(std::vector<BIRD_STRUCTURE> bird) { bird = enterBird(); }
+	//void enterData(std::vector<BIRD_STRUCTURE> bird) { bird = enterBird(); }
 
 //Table RUN
 };
@@ -43,7 +43,7 @@ private:
 
 public:
 	JUMP() { this->ability = "Jump"; }
-	void enterData(std::vector<BIRD_STRUCTURE> bird) { bird = enterBird(); }
+	//void enterData(std::vector<BIRD_STRUCTURE> bird) { bird = enterBird(); }
 
 //Table Jump
 };
