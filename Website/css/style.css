@@ -30,19 +30,16 @@
     body {
         scrollbar-width: thin;
         scrollbar-color: #90A4AE #CFD8DC;
-        ;
     }
     
     body::-webkit-scrollbar-track {
         background: #CFD8DC;
-        ;
     }
     
     body::-webkit-scrollbar-thumb {
         background-color: #90A4AE;
         border-radius: 6px;
         border: 3px solid #CFD8DC;
-        ;
     }
     
     main {
@@ -365,7 +362,7 @@
     
     #mapid {
         margin-top: 5vh;
-        height: 800px;
+        height: 650px;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
@@ -838,7 +835,7 @@
     
     #map-text {
         text-align: center;
-        font-size: 30px;
+        font-size: 240%;
         color: var(--white);
         margin-bottom: 1%;
         margin-top: 6%;
@@ -860,19 +857,28 @@
         #live-video-grid {
             display: block;
         }
+
         #video-container {
             width: 90%;
-            height: 90%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 7%;
         }
+
         #live-video {
             width: 100%;
-            height: 70%;
         }
+
         #save-the-birds-text {
             margin-left: auto;
             margin-right: auto;
             display: block;
             text-align: center;
+        }
+
+        #tips-button {
+            margin-bottom: 7%;
         }
     }
     
