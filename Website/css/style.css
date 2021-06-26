@@ -23,6 +23,8 @@
         text-decoration: none;
     }
     
+    /* Custom scrollbar */
+
     body::-webkit-scrollbar {
         width: 11px;
     }
@@ -41,7 +43,7 @@
         border-radius: 6px;
         border: 3px solid #CFD8DC;
     }
-    
+
     main {
         height: 100vh;
         display: grid;
@@ -49,6 +51,8 @@
         grid-template-rows: 100% 100% 300% inherit;
     }
     
+    /* Navigation bar */
+
     nav {
         position: fixed;
         width: 100%;
@@ -168,6 +172,8 @@
         transform: rotate(45deg) translate(-5px, -6px);
     }
     
+    /* Section 1 */
+
     .section1 {
         grid-row: 1/2;
         grid-column: 1/3;
@@ -203,6 +209,8 @@
         mix-blend-mode: color;
     }
     
+    /* Parallax images */
+
     .section1 img {
         position: absolute;
         top: 0;
@@ -235,6 +243,8 @@
         margin-bottom: 250px;
     }
     
+    /* Login */
+
     #login-button {
         width: 15vh;
         font-size: 40%;
@@ -245,6 +255,8 @@
         border-radius: 10px;
     }
     
+    /* Logout */
+
     #logout-button {
         width: 15vh;
         font-size: 40%;
@@ -256,12 +268,16 @@
         display: none;
     }
     
+    /* Section 2 */
+
     .section2 {
         grid-row: 2/3;
         grid-column: 1/3;
         background-color: var(--lightteal);
         padding-bottom: 3%;
     }
+
+    /* Live video */
 
     #live-video-grid {
         margin-top: 20px;
@@ -339,6 +355,8 @@
         }
     }
 
+    /* Section 3 */
+
     .section3 {
         grid-row: 3/4;
         grid-column: 1/3;
@@ -360,6 +378,8 @@
         margin-top: 15px;
     }
     
+    /* Search button */
+
     #search-button {
         margin-top: 5%;
         margin-left: 30%;
@@ -396,6 +416,8 @@
         width: 0%;
     }
    
+    /* Map */
+
     #mapid {
         margin-top: 5vh;
         height: 650px;
@@ -650,7 +672,7 @@
         transform: rotateY(180deg);
     }
 
-    /*birds-pictures*/
+    /*Birds pictures*/
     
     .bird {
         margin-top: 20px;
@@ -696,11 +718,15 @@
         margin-top: 6%;
     }
     
+    /* Section 4 */
+
     .section4 {
         grid-row: 4/5;
         grid-column: 1/3;
         background-color: #049bb8;
     }
+
+    /* Charts */
 
     #chartdiv1 {
         width: 50%;
