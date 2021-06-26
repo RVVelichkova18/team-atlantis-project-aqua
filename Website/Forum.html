@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Atlantis</title>
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/forum.css">
+    <link rel="manifest" href="../manifest.json">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html" class="logotext">Atlantis</a>
+        </div>
+    </nav>
+
+    <div id="wrapper">
+        <div id="menu">
+            <p class="welcome">Дай идея за опазване</p>
+            <div id="chatbox">
+                <ul id="messages">
+
+                </ul>
+            </div>
+        </div>
+        <form onsubmit="return sendMessage()">
+            <input type="text" name="" id="message" class="usermsg" size="63" placeholder="Опиши своята идея" autocomplete="off" />
+            <input type="submit" name="" class="button">
+        </form>
+    </div>
+
+    <script src="Javascript/forum.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <script>
+        // Web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyAaFoJ4tFxEw0523v3Bp2J8KuTdJzqScUI",
+            authDomain: "atlantis-baab5.firebaseapp.com",
+            databaseURL: "https://atlantis-baab5-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "atlantis-baab5",
+            storageBucket: "atlantis-baab5.appspot.com",
+            messagingSenderId: "295171315416",
+            appId: "1:295171315416:web:491c453cd30e1f2f9ce9ad",
+            measurementId: "G-JHKN7M7WLJ"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <script>
+        let myName = prompt("enter your name");
+
+        const sendMessage =() =>{
+            let message = document.getElementById("message").value;
+            firebase.database().ref("messages").push().set({
+                "sender": myName,
+                "message": message
+            })
+            let message1 = document.getElementById("message");
+            message1.value="";
+            return false;
+        }
+    </script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('../serviceWorker.js');
+        }
+    </script>
+</body>
+
+</html>

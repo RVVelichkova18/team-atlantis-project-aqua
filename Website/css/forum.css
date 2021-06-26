@@ -1,0 +1,132 @@
+body{
+  font: 12px arial;
+  color: #222;
+  text-align: center;
+  margin: 0;
+}
+
+nav {
+  margin-top: -200px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #007c94;
+  z-index: 4;
+
+}
+
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 25px;
+}
+
+.logotext {
+  color: white;
+}
+
+form, p, span{
+  margin: 0;
+  padding: 0;
+}
+
+input{
+  font: 12px arial;
+}
+
+a{
+  color: #0000ff;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+#wrapper, #loginform{
+  margin: 0 auto;
+  margin-top: 200px;
+  padding-bottom: 25px;
+  background: #bcc0c0;
+  width: 514px;
+  border: 6px solid #ebebeb;
+  border-radius: 6px;
+}
+
+#chatbox{
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  padding: 10px;
+  background: #fff;
+  height: 270px;
+  width: 460px;
+  border: 1px solid #ebebeb;
+  overflow: auto;
+  border-radius: 5px;
+}
+
+.usermsg{
+  width: 390px;
+  padding: 10px;
+  border: none;
+  background: #fff;
+  resize: none;
+  border-radius: 5px;
+}
+
+.button{
+  background-color: rgb(5, 197, 255);
+  color:white;
+  padding:11px 15px;
+  border: none;
+  cursor: pointer;
+  width: 13%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+#button:hover{
+  background-color: teal;
+  color: white;
+}
+
+.welcome{
+  float: left;
+  font-size:18px;
+  color: teal;
+}
+
+.login{
+  float: left;
+  background-color: rgb(3, 75, 243);
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  cursor: pointer;
+  width: 18%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  border-radius: 5px;
+  font-size: 10px;
+  margin-right: 2px;
+}
+
+.login:hover{
+  background-color: rgb(0, 127, 212);
+  color: white;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+  display: list-item;
+  text-align: -webkit-match-parent;
+  font-size: 16px;
+}
