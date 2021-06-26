@@ -4,6 +4,8 @@
 #include "FUNCTIONS.h"
 #include "BIRD_STRUCTURE.h"
 #include "BIRD_CLASS.h"
+#include "LAKE_CLASS.h"
+#include "LAKE_STRUCTURE.h"
 
 using namespace std;
 
@@ -31,7 +33,7 @@ void checkBirdSize(string size, int& yearsOflife)
 
 vector <BIRD_STRUCTURE> enterBird()
 {
-    BIRD_STRUCTURE* birds = new BIRD_STRUCTURE;
+    BIRD_STRUCTURE* birds;
     vector<BIRD_STRUCTURE> exampleVector;
 
     int n;

@@ -32,5 +32,11 @@
     <ClInclude Include="BIRD_STRUCTURE.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="LAKE_CLASS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LAKE_STRUCTURE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

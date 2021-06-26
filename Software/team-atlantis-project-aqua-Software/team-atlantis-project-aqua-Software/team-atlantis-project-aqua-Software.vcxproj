@@ -146,6 +146,8 @@
     <ClInclude Include="BIRD_CLASS.h" />
     <ClInclude Include="BIRD_STRUCTURE.h" />
     <ClInclude Include="FUNCTIONS.h" />
+    <ClInclude Include="LAKE_CLASS.h" />
+    <ClInclude Include="LAKE_STRUCTURE.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
