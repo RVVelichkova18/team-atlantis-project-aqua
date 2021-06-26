@@ -14,6 +14,7 @@
 
 <body>
     <main>
+        <!--Nav bar-->
         <nav>
             <div class="logo">
                 <a href="#home" class="logotext">Atlantis</a>
@@ -22,39 +23,40 @@
                 <li><a href="#cameras">Камери</a></li>
                 <li><a href="#info">Информация</a></li>
                 <li><a href="#stats">Статистики</a></li>
+                <!--Login button-->
                 <li>
                     <button id="login-button"><a href="#" id="login">Влез</a></button>
                 </li>
+                <!--Logout button-->
                 <li>
                     <button id="logout-button"> <a href="#" id="logout">Излез</a></button>
                 </li>
             </ul>
+            <!--Burger menu-->
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
         </nav>
-
+        <!--Section 1-->
         <section class="section1" id="home">
+            <!--Parallax pictures-->
             <img src="images/forest.png" id="forest">
             <img src="images/rocks.png" id="rocks">
             <img src="images/water.png" id="water">
             <img src="images/bird1.png" id="bird1">
             <img src="images/bird2.png" id="bird2">
 
-
             <h1 id="heading">AQUA</h1>
-
-
-
         </section>
-
+        <!--Section 2-->
         <section class="section2" id="cameras">
             <h1 id="birds-heading">Наблюдавай птиците в Бургас и ги пази!</h1>
-
+            <!--Video-->
             <div id="live-video-grid">
                 <div id="video-container">
+                    <!--Actual live video-->
                     <!-- <iframe id="live-video" src="https://www.youtube.com/embed/fLX5RMMqjzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                     <video id="live-video" controls>
                         <source src="videos/Къдроглави пеликани.mp4" type="video/mp4">
@@ -69,21 +71,23 @@
             </div>
 
         </section>
-
+        <!--Section 3-->
         <section class="section3" id="info">
             <h1 id="map-text">Кликнете на иконките на езерата, за да ги разгледате!</h1>
+            <!--Map-->
             <div id="mapid"></div>
-
+            <!--Pop-up-->
             <div class="info1">
                 <button class="exit-button">X</button>
             </div>
-
+            <!--Search button-->
             <button id="search-button">
                 <i class="fas fa-search"></i> Търси
                 <input class="search-text" type="text">
             </button>
-
+            <!--Flipping info cards-->
             <div id="info-cards">
+                <!--Card 1-->
                 <div class="scene1">
                     <div class="card1">
                         <div class="face front1">
@@ -100,7 +104,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!--Card 2-->
                 <div class="scene2">
                     <div class="card2">
                         <div class="face front2">
@@ -117,7 +121,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!--Card 3-->
                 <div class="scene3">
                     <div class="card3">
                         <div class="face front3">
@@ -134,7 +138,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!--Card 4-->
                 <div class="scene4">
                     <div class="card4">
                         <div class="face front4">
@@ -151,7 +155,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!--Card 5-->
                 <div class="scene5">
                     <div class="card5">
                         <div class="face front5">
@@ -168,7 +172,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!--Card 6-->
                 <div class="scene6">
                     <div class="card6">
                         <div class="face front6">
@@ -185,7 +189,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!--Card 7-->
                 <div class="scene7">
                     <div class="card7">
                         <div class="face front7">
@@ -202,7 +206,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!--Card 8-->
                 <div class="scene8">
                     <div class="card8">
                         <div class="face front8">
@@ -219,7 +223,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!--Card 9-->
                 <div class="scene9">
                     <div class="card9">
                         <div class="face front9">
@@ -236,7 +240,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!--Card 10-->
                 <div class="scene10">
                     <div class="card10">
                         <div class="face front10">
@@ -256,8 +260,9 @@
             </div>
 
         </section>
-
+        <!--Section 4-->
         <section class="section4" id="stats">
+            <!--Info charts-->
             <div class="charts">
                 <div class="chart1">
                     <p class="chart1-text">Средно ниво на водата във водните обекти на Бургас</p>
@@ -270,13 +275,14 @@
                 </div>
             </div>
 
-                <p class="chart2-text">Площ на защитените територии (кв. км)</p>
-                <div id="chartdiv1"></div>
+            <p class="chart2-text">Площ на защитените територии (кв. км)</p>
+            <div id="chartdiv1"></div>
         </section>
 
 
-
+        <!--Section 5-->
         <section class="section5">
+            <!--Footer-->
             <div class="footer-distributed">
 
                 <div class="footer-left">
@@ -305,7 +311,8 @@
                         <p>088-564-7862</p>
                     </div>
                     <div>
-                        <p><i class="fa fa-envelope"></i><nbsp;><a href="mailto:atlantisproject2@gmail.com">atlantisproject2@gmail.com</a></p>
+                        <p><i class="fa fa-envelope"></i>
+                            <nbsp;><a href="mailto:atlantisproject2@gmail.com">atlantisproject2@gmail.com</a></p>
                     </div>
                 </div>
                 <div class="footer-right">
