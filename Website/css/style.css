@@ -263,6 +263,12 @@
     #rocks {
         z-index: 2;
     }
+
+    @media (max-width: 550px) {
+        #rocks, #bird1, #bird2 {
+            display: none;
+        }
+    }
     
     #tips-button {
         width: 300px;
@@ -379,7 +385,6 @@
         padding: 20px;
         display: none;
         background: var(--darkteal);
-        ;
         border: rgba(0, 0, 0, 0.274) .1px solid;
         border-radius: 15px;
     }
