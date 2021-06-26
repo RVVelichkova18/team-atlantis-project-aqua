@@ -63,13 +63,24 @@
 
     <script>
 
-        firebase.database().ref("messages").on("child_added", function (snap){
+        firebase.database().ref("messages").on("child_added", function (snapshot){
             var html = "";
-                html += "<li>";
-            html += ""+ snap.val().sender+" : " + snap.val().message;
+                html += "<li id='message-" + snapshot.key + "'>";
+                    if(snapshot.val().sender == myName){
+                        html += "<button data-id='" + snapshot.key + "' onclick='deleteMessage(this);'>";
+                        html += "Delete";
+                        html += "</button>";
+                    }
+            html += ""+ snapshot.val().sender+" : " + snapshot.val().message;
             html += "</li>";
             document.getElementById("messages").innerHTML += html;
-        })
+        });
+
+        
+        firebase.database().ref("messages").on("child_removed", function (snapshot) {
+            document.getElementById("message-" + snapshot.key).innerHTML = "Този съвет беше изтрит :/";
+        });
+
     </script>
 
     <script>

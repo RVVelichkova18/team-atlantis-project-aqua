@@ -10,3 +10,9 @@ let myName = prompt("enter your name");
             message1.value="";
             return false;
         }
+
+
+    function deleteMessage(self) {
+        var messageId = self.getAttribute("data-id");
+        firebase.database().ref("messages").child(messageId).remove();
+    }
