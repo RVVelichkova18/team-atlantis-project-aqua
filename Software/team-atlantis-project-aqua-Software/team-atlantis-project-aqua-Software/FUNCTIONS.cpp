@@ -10,6 +10,22 @@
 
 using namespace std;
 
+void checkManyInput(int& a)
+{
+    while (1)
+    {
+        if (cin.fail())
+        {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << endl;
+            cout << "Incorrect Input!" << endl;
+            cout << "Try again ->: "; cin >> a;
+        }
+        if (!cin.fail()) break;
+    }
+}
+
 void openWebsite()
 {
     ofstream webApplication;

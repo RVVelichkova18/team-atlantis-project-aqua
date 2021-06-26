@@ -7,8 +7,6 @@
 
 using namespace std;
 
-bool flag;
-
 bool birdMenu(SWIM swimmingBird, RUN runningBird, JUMP jumpingBird)
 {
 	system("CLS");
@@ -20,8 +18,10 @@ bool birdMenu(SWIM swimmingBird, RUN runningBird, JUMP jumpingBird)
 	cout << "| (3) Delete Bird      		|" << endl;
 	cout << "\\-----------------------------/" << endl;
 
+	bool flag;
 	int option;
 	cin >> option;
+	checkManyInput(option);
 
 	switch (option)
 	{

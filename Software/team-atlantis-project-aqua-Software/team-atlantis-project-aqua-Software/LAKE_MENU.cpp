@@ -7,8 +7,6 @@
 
 using namespace std;
 
-bool flag;
-
 bool lakeMenu(ORGANIC organicLake, GLACIAL glacialLake, LANDSLIDE landslideLake)
 {
 	system("CLS");
@@ -17,11 +15,13 @@ bool lakeMenu(ORGANIC organicLake, GLACIAL glacialLake, LANDSLIDE landslideLake)
 	cout << "|   Welcome to Lake Menu!      |" << endl;
 	cout << "| (1) Add Lake                 |" << endl;
 	cout << "| (2) Update Lake              |" << endl;
-	cout << "| (3) Delete Lake      		|" << endl;
+	cout << "| (3) Delete Lake      	    |" << endl;
 	cout << "\\-----------------------------/" << endl;
 
+	bool flag;
 	int option;
 	cin >> option;
+	checkManyInput(option);
 
 	switch (option)
 	{

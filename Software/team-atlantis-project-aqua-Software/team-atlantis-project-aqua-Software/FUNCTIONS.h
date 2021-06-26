@@ -6,6 +6,7 @@
 #include "LAKE_CLASS.h"
 #include "LAKE_STRUCTURE.h"
 
+void checkManyInput(int& a);
 void openWebsite();
 void exit();
 void incorrectInput();

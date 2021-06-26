@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "FUNCTIONS.h"
 #include "BIRD_STRUCTURE.h"
 #include "BIRD_CLASS.h"
 #include "BIRD_MENU.h"
@@ -27,6 +28,7 @@ bool mainMenu(SWIM swimmingBird, RUN runningBird, JUMP jumpingBird, ORGANIC orga
 
 	int option;
 	cin >> option;
+	checkManyInput(option);
 
 	switch (option)
 	{
