@@ -62,18 +62,14 @@
     </script>
 
     <script>
-        let myName = prompt("enter your name");
 
-        const sendMessage =() =>{
-            let message = document.getElementById("message").value;
-            firebase.database().ref("messages").push().set({
-                "sender": myName,
-                "message": message
-            })
-            let message1 = document.getElementById("message");
-            message1.value="";
-            return false;
-        }
+        firebase.database().ref("messages").on("child_added", function (snap){
+            var html = "";
+                html += "<li>";
+            html += ""+ snap.val().sender+" : " + snap.val().message;
+            html += "</li>";
+            document.getElementById("messages").innerHTML += html;
+        })
     </script>
 
     <script>
