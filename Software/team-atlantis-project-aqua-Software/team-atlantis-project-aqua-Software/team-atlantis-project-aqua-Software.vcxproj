@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="BIRD_MENU.cpp" />
     <ClCompile Include="FUNCTIONS.cpp" />
+    <ClCompile Include="LAKE_MENU.cpp" />
     <ClCompile Include="mainMenu.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -149,6 +150,7 @@
     <ClInclude Include="BIRD_STRUCTURE.h" />
     <ClInclude Include="FUNCTIONS.h" />
     <ClInclude Include="LAKE_CLASS.h" />
+    <ClInclude Include="LAKE_MENU.h" />
     <ClInclude Include="LAKE_STRUCTURE.h" />
   </ItemGroup>
   <ItemGroup>

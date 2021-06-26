@@ -2,22 +2,22 @@
 #include <string>
 #include <vector>
 #include "FUNCTIONS.h"
-#include "BIRD_STRUCTURE.h"
-#include "BIRD_CLASS.h"
+#include "LAKE_CLASS.h"
+#include "LAKE_STRUCTURE.h"
 
 using namespace std;
 
 bool flag;
 
-bool birdMenu(SWIM swimmingBird, RUN runningBird, JUMP jumpingBird)
+bool lakeMenu(ORGANIC organicLake, GLACIAL glacialLake, LANDSLIDE landslideLake)
 {
 	system("CLS");
 	cout << endl;
 	cout << "/-----------------------------\\" << endl;
-	cout << "|   Welcome to Bird Menu!      |" << endl;
-	cout << "| (1) Add Bird                 |" << endl;
-	cout << "| (2) Update Bird              |" << endl;
-	cout << "| (3) Delete Bird      		|" << endl;
+	cout << "|   Welcome to Lake Menu!      |" << endl;
+	cout << "| (1) Add Lake                 |" << endl;
+	cout << "| (2) Update Lake              |" << endl;
+	cout << "| (3) Delete Lake      		|" << endl;
 	cout << "\\-----------------------------/" << endl;
 
 	int option;
