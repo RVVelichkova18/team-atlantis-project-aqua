@@ -171,6 +171,69 @@
     .toggle .line3 {
         transform: rotate(45deg) translate(-5px, -6px);
     }
+
+    /* Glassmorphism bubbles */
+
+    .glassmorphism {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        border-left: 5px solid rgba(255, 255, 255, 0.3);
+        border-top: 3.5px solid rgba(255, 255, 255, 0.2);
+        border-right: 3px solid rgba(142, 251, 255, 0.3);
+        border-bottom: 1.5px solid rgba(250, 252, 153, 0.3);
+        box-shadow: 20px 20px 40px -6px rgba(36, 68, 49, 0.075);
+        background: rgba(255, 255, 255, 0.3);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        z-index: -1;
+        overflow: hidden;
+    }
+
+    .glassmorphism1 {
+        width: 600px;
+        height: 600px;
+        right: -150px;
+        border-radius: 50%;
+        border-left: 10px solid rgba(255, 255, 255, 0.3);
+        border-top: 7px solid rgba(255, 255, 255, 0.2);
+        border-right: 6px solid rgba(142, 251, 255, 0.3);
+        border-bottom: 3px solid rgba(250, 252, 153, 0.3);
+        box-shadow: 20px 20px 40px -6px rgba(36, 68, 49, 0.075);
+        background: rgba(255, 255, 255, 0.4);
+        -webkit-backdrop-filter: blur(70px);
+        backdrop-filter: blur(70px);
+        z-index: -1;
+    }
+
+    .container1 {
+        width: 450px;
+        height: 650px;
+        z-index: -1;
+        position: absolute;
+        top: 800px;
+        right: 0px;
+        overflow:hidden;
+    }
+
+    .glassmorphism2 {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top: 1200px;
+        left: -150px;
+        border-radius: 50%;
+        border-left: 10px solid rgba(255, 255, 255, 0.3);
+        border-top: 7px solid rgba(255, 255, 255, 0.2);
+        border-right: 6px solid rgba(142, 251, 255, 0.3);
+        border-bottom: 3px solid rgba(250, 252, 153, 0.3);
+        box-shadow: 20px 20px 40px -6px rgba(36, 68, 49, 0.075);
+        background: rgba(255, 255, 255, 0.4);
+        -webkit-backdrop-filter: blur(70px);
+        backdrop-filter: blur(70px);
+        z-index: -1;
+        overflow: hidden;
+    }
     
     /* Section 1 */
 
@@ -275,6 +338,7 @@
         grid-column: 1/3;
         background-color: var(--lightteal);
         padding-bottom: 3%;
+        z-index: -2;
     }
 
     /* Live video */
@@ -361,6 +425,7 @@
         grid-row: 3/4;
         grid-column: 1/3;
         background-color: var(--mediumblue);
+        z-index: -2;
     }
 
     #tips-button {
@@ -724,6 +789,7 @@
         grid-row: 4/5;
         grid-column: 1/3;
         background-color: #049bb8;
+        z-index: -2;
     }
 
     /* Charts */
@@ -812,6 +878,7 @@
         grid-row: 5/6;
         grid-column: 1/3;
         background-color: var(--white);
+        z-index: -2;
     }
   
     footer {
