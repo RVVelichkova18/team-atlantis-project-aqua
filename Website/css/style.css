@@ -271,8 +271,8 @@
     }
     
     #tips-button {
-        width: 300px;
-        font-size: 22px;
+        width: 70%;
+        font-size: 140%;
         padding: 0.8% 3% 1.2% 4%;
         border: none;
         background-color: var(--lightgreen);
@@ -624,7 +624,7 @@
     }
     
     #birds-heading {
-        font-size: 60px;
+        font-size: 240%;
         color: var(--white);
         text-align: center;
         margin-top: 6%;
@@ -815,21 +815,25 @@
     #live-video-grid {
         margin-top: 20px;
         display: grid;
-        grid-template-columns: 1.5fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 2em, 4em;
+    }
+
+    #video-container>video {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #live-video {
-        margin-top: -20px;
-        margin-left: 130px;
-        width: 600px;
-        height: 340px;
+        width: 90%;
     }
     
     #cameras-text {
         text-align: center;
         font-size: 30px;
         color: #005566;
-        margin-bottom: 30px;
+        margin-bottom: 3%;
     }
     
     #map-text {
@@ -840,34 +844,19 @@
         margin-top: 6%;
     }
     
-    #save-the-birds {
-        margin-right: 70px;
-    }
-    
     #save-the-birds-text {
-        margin-bottom: 40px;
-        width: 500px;
+        width: 90%;
         text-align: justify;
-        margin-top: 30px;
         color: var(--white);
-        line-height: 28px;
+        line-height: 155%;
+        margin-bottom: 4%;
+    }
+
+    #save-the-birds {
+        align-self: center;
     }
     
-    @media (max-width: 1270px) {
-        #live-video {
-            width: 500px;
-            height: 290px;
-        }
-    }
-    
-    @media (max-width: 1200px) {
-        #live-video {
-            width: 400px;
-            height: 250px;
-        }
-    }
-    
-    @media (max-width: 1090px) {
+    @media (max-width: 880px) {
         #live-video-grid {
             display: block;
         }
