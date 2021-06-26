@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "team-atlantis-project-aqua-Software", "team-atlantis-project-aqua-Software\team-atlantis-project-aqua-Software.vcxproj", "{90646EE7-5F14-458B-A4B1-2BB88F5B4AAA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SQL-Connection", "..\..\..\..\SQL proejct\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.vcxproj", "{170B7D57-86E6-4F64-B910-CDAB730EAF37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{90646EE7-5F14-458B-A4B1-2BB88F5B4AAA}.Release|x64.Build.0 = Release|x64
 		{90646EE7-5F14-458B-A4B1-2BB88F5B4AAA}.Release|x86.ActiveCfg = Release|Win32
 		{90646EE7-5F14-458B-A4B1-2BB88F5B4AAA}.Release|x86.Build.0 = Release|Win32
+		{170B7D57-86E6-4F64-B910-CDAB730EAF37}.Debug|x64.ActiveCfg = Debug|x64
+		{170B7D57-86E6-4F64-B910-CDAB730EAF37}.Debug|x64.Build.0 = Debug|x64
+		{170B7D57-86E6-4F64-B910-CDAB730EAF37}.Debug|x86.ActiveCfg = Debug|Win32
+		{170B7D57-86E6-4F64-B910-CDAB730EAF37}.Debug|x86.Build.0 = Debug|Win32
+		{170B7D57-86E6-4F64-B910-CDAB730EAF37}.Release|x64.ActiveCfg = Release|x64
+		{170B7D57-86E6-4F64-B910-CDAB730EAF37}.Release|x64.Build.0 = Release|x64
+		{170B7D57-86E6-4F64-B910-CDAB730EAF37}.Release|x86.ActiveCfg = Release|Win32
+		{170B7D57-86E6-4F64-B910-CDAB730EAF37}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
