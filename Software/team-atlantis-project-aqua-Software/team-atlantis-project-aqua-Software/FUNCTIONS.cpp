@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <vector>
 #include "FUNCTIONS.h"
@@ -8,6 +9,21 @@
 #include "LAKE_STRUCTURE.h"
 
 using namespace std;
+
+void openWebsite()
+{
+    ofstream webApplication;
+    webApplication.open("..\\Website\\index.html");
+}
+
+void exit()
+{
+    system("CLS");
+    cout << endl;
+    cout << "|-----------------------|" << endl;
+    cout << "Exit process remaining.." << endl;
+    cout << "|-----------------------|" << endl;
+}
 
 void incorrectInput()
 {
@@ -33,7 +49,7 @@ void checkBirdSize(string size, int& yearsOflife)
 
 vector <BIRD_STRUCTURE> enterBird()
 {
-    BIRD_STRUCTURE* birds;
+    BIRD_STRUCTURE* birds = new BIRD_STRUCTURE;
     vector<BIRD_STRUCTURE> exampleVector;
 
     int n;
@@ -76,7 +92,7 @@ void checkLakeDepth(string depth, int& yearsOld)
 
 vector <LAKE_STRUCTURE> enterLake()
 {
-    LAKE_STRUCTURE* lakes;
+    LAKE_STRUCTURE* lakes = new LAKE_STRUCTURE;
     vector<LAKE_STRUCTURE> exampleVector;
 
     int n;

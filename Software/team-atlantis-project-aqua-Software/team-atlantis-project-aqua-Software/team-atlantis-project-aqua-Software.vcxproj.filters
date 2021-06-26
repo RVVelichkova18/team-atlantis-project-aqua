@@ -21,6 +21,9 @@
     <ClCompile Include="FUNCTIONS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BIRD_MENU.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FUNCTIONS.h">
@@ -36,6 +39,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="LAKE_STRUCTURE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BIRD_MENU.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
