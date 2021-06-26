@@ -2,12 +2,13 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "FUNCTIONS.h"
+#include "BIRD_STRUCTURE.h"
+#include "BIRD_CLASS.h"
 using namespace std;
 
 bool flag;
 
-bool mainMenu()
+bool mainMenu(SWIM swimmingBird, RUN runningBird, JUMP jumpingBird)
 {
 	system("CLS");
 	cout << endl;
@@ -36,13 +37,20 @@ bool mainMenu()
 	case 4:
 		//
 		break;
+
+	default:
+		incorrectInput();
 	}
 	return true;
 }
 
 int main()
 {
+	SWIM swimmingBird;
+	RUN runningBird;
+	JUMP jumpingBird;
+
     do {
-        flag = mainMenu();
+        flag = mainMenu(swimmingBird, runningBird, jumpingBird);
     } while (flag);
 }
