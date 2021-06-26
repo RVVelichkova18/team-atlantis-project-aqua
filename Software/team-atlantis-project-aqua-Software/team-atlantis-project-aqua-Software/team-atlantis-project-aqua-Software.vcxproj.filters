@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="team-atlantis-project-aqua-Software.cpp">
+    <ClCompile Include="mainMenu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="FUNCTIONS.cpp">
@@ -38,5 +38,13 @@
     <ClInclude Include="LAKE_STRUCTURE.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LakeClassDiagram.cd">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="BirdClassDiagram.cd">
+      <Filter>Header Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -8,4 +8,6 @@
 
 void incorrectInput();
 void checkBirdSize(std::string size, int& yearsOflife);
+void checkLakeDepth(std::string depth, int& yearsOld);
 std::vector <BIRD_STRUCTURE> enterBird();
+std::vector<LAKE_STRUCTURE> enterLake();

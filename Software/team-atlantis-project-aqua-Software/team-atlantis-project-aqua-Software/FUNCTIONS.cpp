@@ -57,3 +57,45 @@ vector <BIRD_STRUCTURE> enterBird()
 
     return exampleVector;
 }
+
+void checkLakeDepth(string depth, int& yearsOld)
+{
+    if (depth == "normal")
+    {
+        yearsOld = 8;
+    }
+    else if (depth == "average")
+    {
+        yearsOld = 18;
+    }
+    else if (depth == "deep")
+    {
+        yearsOld = 28;
+    }
+}
+
+vector <LAKE_STRUCTURE> enterLake()
+{
+    LAKE_STRUCTURE* lakes;
+    vector<LAKE_STRUCTURE> exampleVector;
+
+    int n;
+    cout << "How many lakes do you want to add: "; cin >> n;
+    cout << "================EnterLake===================" << endl;
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << "|NAME: "; getline(cin, lakes->name);
+        cout << "|FISH(Y/N): "; getline(cin, lakes->fish);
+        cout << "|DEPTH(normal, average, deep): "; getline(cin, lakes->depth);
+        cout << "|LENGTH: "; getline(cin, lakes->length);
+        checkLakeDepth(lakes->depth, lakes->yearsOld);
+
+        LAKE_STRUCTURE vab = { lakes->name, lakes->fish, lakes->depth, lakes->yearsOld, lakes->length };
+
+        exampleVector.push_back(vab);
+    }
+    cin.ignore(INT_MAX, '\n');
+
+    return exampleVector;
+}

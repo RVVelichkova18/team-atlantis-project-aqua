@@ -49,9 +49,15 @@ bool mainMenu(SWIM swimmingBird, RUN runningBird, JUMP jumpingBird)
 
 int main()
 {
+	// =BIRD=
 	SWIM swimmingBird;
 	RUN runningBird;
 	JUMP jumpingBird;
+
+	// =LAKE=
+	ORGANIC organicLake;
+	GLACIAL glacialLake;
+	LANDSLIDE landslideLake;
 
     do {
         flag = mainMenu(swimmingBird, runningBird, jumpingBird);
