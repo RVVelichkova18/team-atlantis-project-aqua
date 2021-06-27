@@ -1,8 +1,35 @@
-body{
+:root {
+  --white: #f6fcfc;
+  --lightblue: #81c7e0;
+  --mediumblue: #00b8de;
+  --darkteal: #007c94;
+  --ashblue: #617ca9;
+  --darkblue: #003479;
+  --lightteal: #00c0c3;
+  --mediumteal: #10bcdf;
+  --drakgreen: #017e5c;
+  --lightgreen: #8ed32f;
+  --yellow: #f3d100;
+}
+
+body {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  color: #222;
   text-align: center;
   margin: 0;
+  background-color: var(--white);
+  height: 1vh;
+  overflow: hidden;
+}
+
+#background-image {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: -1;
 }
 
 nav {
@@ -23,6 +50,10 @@ nav {
 
 .logotext {
   color: white;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 form, p, span{
@@ -123,16 +154,6 @@ a:hover{
   color: white;
 }
 
-ul{
-  list-style-type: none;
-}
-
-li{
-  display: list-item;
-  text-align: -webkit-match-parent;
-  font-size: 16px;
-}
-
 .text-style{
   background-color: #e4e6eb;
   border-radius: 10px;
@@ -153,22 +174,15 @@ li{
   background-color: #d0d2d4;
 }
 
-li{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-
 #login-button {
-  width: 35vh;
+  width: 70%;
   height: 10vh;
   font-size: 5vh;
   padding: 0.6% 3% 0.8% 3%;
   border: none;
-  background-color: #00ff00;
-  border-radius: 10px;
-  margin-top: 25%;
+  background-color: var(--drakgreen);
+  border-radius: 20px;
+  margin-top: 15%;
 }
 
 #login{
