@@ -6,54 +6,27 @@
 class Bird
 {
 public:
-	void showWhatCanYouDo() { std::cout << "I can " << this->ability << std::endl; };
+	virtual void showWhatCanYouDo();
 
 public:
-	void setName(std::string name) { this->name = name; }
-	std::string getName() { return this->name; }
+	void setName(std::string name);
+	std::string getName();
 
-	void setColor(std::string color) { this->color = color; }
-	std::string getColor() { return this->color; }
+	void setColor(std::string color);
+	std::string getColor();
 
-	void setSize(std::string size) {
+	void setSize(std::string size);
+	std::string getSize();
 
-		this->size = size;
+	int getYearsOfLife();
 
-		if (size == "small")
-		{
-			this->yearsOfLife = 8;
-		}
-		else if (size == "medium")
-		{
-			this->yearsOfLife = 18;
-		}
-		else if (size == "big")
-		{
-			this->yearsOfLife = 28;
-		}
-	}
+	void setMigration(std::string migration);
+	std::string getMigration();
 
-	std::string getSize() { return this->size; }
+	void setSizeOfEggs(std::string sizeOfEggs);
+	std::string getSizeOfEggs();
 
-	int getYearsOfLife() { return this->yearsOfLife; }
-
-	void setMigration(std::string migration) { this->migration = migration; }
-	std::string getMigration() { return this->migration; }
-
-	void setSizeOfEggs(std::string sizeOfEggs) { this->name = sizeOfEggs; }
-	std::string getSizeOfEggs() { return this->sizeOfEggs; }
-
-	void showInfo()
-	{
-		std::cout << "-----------------" << std::endl
-			<< this->ability << std::endl
-			<< this->name << std::endl
-			<< this->color << std::endl
-			<< this->size << std::endl
-			<< this->yearsOfLife << std::endl
-			<< this->migration << std::endl
-			<< this->sizeOfEggs << std::endl;
-	}
+	void showInfo();
 
 protected:
 	std::string ability;
@@ -68,10 +41,7 @@ protected:
 class SwimmingBird : public Bird
 {
 public:
-	SwimmingBird()
-	{
-		this->ability = "swim";
-	}
+	SwimmingBird();
 
 	//Table Swim
 };
@@ -79,10 +49,7 @@ public:
 class RunningBird : public Bird
 {
 public:
-	RunningBird()
-	{
-		this->ability = "run";
-	}
+	RunningBird();
 
 	//Table RUN
 };
@@ -90,9 +57,7 @@ public:
 class JumpingBird : public Bird
 {
 public:
-	JumpingBird()
-	{
-		this->ability = "jump";
-	}
+	JumpingBird();
+
 	//Table Jump
 };

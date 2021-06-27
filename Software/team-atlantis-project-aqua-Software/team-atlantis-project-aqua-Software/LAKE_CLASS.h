@@ -17,10 +17,25 @@ public:
 	void setFish(std::string fish) { this->fish = fish; }
 	std::string getFish() { return this->fish; }
 
-	void setDepth(std::string depth) { this->depth = depth; }
+	void setDepth(std::string depth) { 
+		
+		this->depth = depth;
+
+		if (depth == "normal")
+		{
+			this->yearsOld = 8;
+		}
+		else if (depth == "average")
+		{
+			this->yearsOld = 18;
+		}
+		else if (depth == "deep")
+		{
+			this->yearsOld = 28;
+		}
+	}
 	std::string getDepth() { return this->depth; }
 
-	void setYearsOld(int yearsOld) { this->yearsOld = yearsOld; }
 	int getYearsOld() { return this->yearsOld; }
 
 	void setLength(std::string length) { this->length = length; }
@@ -35,10 +50,10 @@ public:
 	std::string length; // short or large
 };
 
-class Organic : public Lake
+class OrganicLake : public Lake
 {
 public:
-	Organic() 
+	OrganicLake() 
 	{ 
 		this->type = "Organic";
 	}
@@ -46,10 +61,10 @@ public:
 //TABLE 1
 };
 
-class Glacial : public Lake
+class GlacialLake : public Lake
 {
 public:
-	Glacial() 
+	GlacialLake() 
 	{ 
 		this->type = "Glacial";
 	}
@@ -57,10 +72,10 @@ public:
 //TABLE 2
 };
 
-class Landslide : public Lake
+class LandslideLake : public Lake
 {
 public:
-	Landslide()
+	LandslideLake()
 	{
 		this->type = "Landslide";
 	}
