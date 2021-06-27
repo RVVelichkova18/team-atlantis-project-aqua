@@ -29,7 +29,7 @@ void checkManyInput(int& a)
 void openWebsite()
 {
     ofstream webApplication;
-    webApplication.open("..\\Website\\index.html");
+   webApplication.open("..Website\\index.html");
 }
 
 void exit()
