@@ -7,7 +7,7 @@
 
 using namespace std;
 
-bool lakeMenu(ORGANIC organicLake, GLACIAL glacialLake, LANDSLIDE landslideLake)
+bool lakeMenu(vector<Lake*> lakes)
 {
 	system("CLS");
 	cout << endl;

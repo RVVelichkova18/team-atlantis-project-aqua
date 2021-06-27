@@ -2,48 +2,97 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "BIRD_STRUCTURE.h"
-#include "FUNCTIONS.h"
 
-class BIRD
+class Bird
 {
-private:
-	std::string ability;
-	std::vector<BIRD_STRUCTURE> bird;
-};
-
-class SWIM : BIRD
-{
-private:
-	std::string ability;
+public:
+	void showWhatCanYouDo() { std::cout << "I can " << this->ability << std::endl; };
 
 public:
-	SWIM() { this->ability = "Swim"; }
-	//void enterData(std::vector<BIRD_STRUCTURE> bird) { bird = enterBird(); }
+	void setName(std::string name) { this->name = name; }
+	std::string getName() { return this->name; }
 
-//Table Swim
+	void setColor(std::string color) { this->color = color; }
+	std::string getColor() { return this->color; }
+
+	void setSize(std::string size) {
+
+		this->size = size;
+
+		if (size == "small")
+		{
+			this->yearsOfLife = 8;
+		}
+		else if (size == "medium")
+		{
+			this->yearsOfLife = 18;
+		}
+		else if (size == "big")
+		{
+			this->yearsOfLife = 28;
+		}
+	}
+
+	std::string getSize() { return this->size; }
+
+	int getYearsOfLife() { return this->yearsOfLife; }
+
+	void setMigration(std::string migration) { this->migration = migration; }
+	std::string getMigration() { return this->migration; }
+
+	void setSizeOfEggs(std::string sizeOfEggs) { this->name = sizeOfEggs; }
+	std::string getSizeOfEggs() { return this->sizeOfEggs; }
+
+	void showInfo()
+	{
+		std::cout << "-----------------" << std::endl
+			<< this->ability << std::endl
+			<< this->name << std::endl
+			<< this->color << std::endl
+			<< this->size << std::endl
+			<< this->yearsOfLife << std::endl
+			<< this->migration << std::endl
+			<< this->sizeOfEggs << std::endl;
+	}
+
+protected:
+	std::string ability;
+	std::string name;
+	std::string color;
+	std::string size; // big->28y life | medium->10y life | small - 8y life
+	int yearsOfLife;
+	std::string migration; // Y or N
+	std::string sizeOfEggs; // big,med,small
 };
 
-class RUN : BIRD
+class SwimmingBird : public Bird
 {
-private:
-	std::string ability;
-
 public:
-	RUN() { this->ability = "Run"; }
-	//void enterData(std::vector<BIRD_STRUCTURE> bird) { bird = enterBird(); }
+	SwimmingBird()
+	{
+		this->ability = "swim";
+	}
 
-//Table RUN
+	//Table Swim
 };
 
-class JUMP : BIRD
+class RunningBird : public Bird
 {
-private:
-	std::string ability;
-
 public:
-	JUMP() { this->ability = "Jump"; }
-	//void enterData(std::vector<BIRD_STRUCTURE> bird) { bird = enterBird(); }
+	RunningBird()
+	{
+		this->ability = "run";
+	}
 
-//Table Jump
+	//Table RUN
+};
+
+class JumpingBird : public Bird
+{
+public:
+	JumpingBird()
+	{
+		this->ability = "jump";
+	}
+	//Table Jump
 };

@@ -7,13 +7,14 @@
 
 using namespace std;
 
-bool birdMenu(SWIM swimmingBird, RUN runningBird, JUMP jumpingBird)
+bool birdMenu(vector<Bird*>& birds)
 {
 	system("CLS");
 	cout << endl;
 	cout << "/-----------------------------\\" << endl;
 	cout << "|   Welcome to Bird Menu!      |" << endl;
-	cout << "| (1) Add Bird                 |" << endl;
+	cout << "| (0) Show birds       		|" << endl;
+	cout << "| (1) Add Jumping Bird         |" << endl;
 	cout << "| (2) Update Bird              |" << endl;
 	cout << "| (3) Delete Bird      		|" << endl;
 	cout << "\\-----------------------------/" << endl;
@@ -23,10 +24,20 @@ bool birdMenu(SWIM swimmingBird, RUN runningBird, JUMP jumpingBird)
 	cin >> option;
 	checkManyInput(option);
 
+	Bird* bird = NULL;
+
 	switch (option)
 	{
+	case 0:
+		for (int i = 0; i < birds.size(); i++)
+		{
+			birds[i]->showInfo();
+		}
+
+		break;
 	case 1:
-		//
+		bird = enterJumpingBird();
+		birds.push_back(bird);
 		break;
 	case 2:
 		//

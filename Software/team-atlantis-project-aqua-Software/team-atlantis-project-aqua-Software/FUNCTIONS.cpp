@@ -47,8 +47,12 @@ void incorrectInput()
     cout << "Incorrect Input!" << endl;
 }
 
-void checkBirdSize(string size, int& yearsOflife)
+// ======================= BIRD =============================
+
+int calculateYearsOfLife(string size)
 {
+    int yearsOflife;
+
     if (size == "small")
     {
         yearsOflife = 8;
@@ -61,9 +65,38 @@ void checkBirdSize(string size, int& yearsOflife)
     {
         yearsOflife = 28;
     }
+
+    return yearsOflife;
 }
 
-vector <BIRD_STRUCTURE> enterBird()
+JumpingBird* enterJumpingBird()                       // trqbva da se narpavqt za vsqka ptica po otdelno funkciq!
+{
+    JumpingBird* jumpingBird = new JumpingBird();
+    string str; 
+    int yearsOfLife;
+
+    cin.ignore(INT_MAX, '\n');
+
+    cout << "|NAME: "; getline(cin, str);
+    jumpingBird->setName(str);
+
+    cout << "|COLOR: "; getline(cin, str);
+    jumpingBird->setColor(str);
+
+    cout << "|SIZE - (small,middle,big): "; getline(cin, str);
+    jumpingBird->setSize(str);
+
+    cout << "|MIGRATION - (Y/N): "; getline(cin, str);
+    jumpingBird->setMigration(str);
+
+    cout << "|SIZEOFEGGS- (tiny,average,fat): "; getline(cin, str);
+    jumpingBird->setSizeOfEggs(str);
+
+    return jumpingBird;
+}
+
+/*
+vector <BIRD_STRUCTURE> enterBird__TEMP()
 {
     BIRD_STRUCTURE* birds = new BIRD_STRUCTURE;
     vector<BIRD_STRUCTURE> exampleVector;
@@ -79,7 +112,7 @@ vector <BIRD_STRUCTURE> enterBird()
         cout << "|SIZE: "; getline(cin, birds->size);
         cout << "|MIGRATION: "; getline(cin, birds->migration);
         cout << "|SIZEOFEGGS: "; getline(cin, birds->sizeOfEggs);
-        checkBirdSize(birds->size, birds->yearsOfLife);
+        calculateYearsOfLife(birds->size, birds->yearsOfLife);
 
         BIRD_STRUCTURE vab = { birds->name, birds->color, birds->size, birds->yearsOfLife, birds->migration, birds->sizeOfEggs };
 
@@ -89,6 +122,9 @@ vector <BIRD_STRUCTURE> enterBird()
 
     return exampleVector;
 }
+*/
+
+// ======================= LAKE =============================
 
 void checkLakeDepth(string depth, int& yearsOld)
 {
@@ -106,6 +142,7 @@ void checkLakeDepth(string depth, int& yearsOld)
     }
 }
 
+/*
 vector <LAKE_STRUCTURE> enterLake()
 {
     LAKE_STRUCTURE* lakes = new LAKE_STRUCTURE;
@@ -131,3 +168,4 @@ vector <LAKE_STRUCTURE> enterLake()
 
     return exampleVector;
 }
+*/
