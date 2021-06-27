@@ -29,7 +29,7 @@
         </div>
         <form onsubmit="return sendMessage()">
             <input type="text" name="" id="message" class="usermsg" size="63" placeholder="Опиши своята идея" autocomplete="off" />
-            <input type="submit" name="" class="button">
+            <input type="submit" name="" class="button" value="Прати">
         </form>
     </div>
 
@@ -65,13 +65,13 @@
 
         firebase.database().ref("messages").on("child_added", function (snapshot){
             var html = "";
-                html += "<li id='message-" + snapshot.key + "'>";
+                html += "<li id='message-" + snapshot.key + "' class='text-style'>";
                     if(snapshot.val().sender == myName){
                         html += "<button data-id='" + snapshot.key + "' onclick='deleteMessage(this);'>";
                         html += "Delete";
                         html += "</button>";
                     }
-            html += ""+ snapshot.val().sender+" : " + snapshot.val().message;
+            html += ""+ snapshot.val().sender+" : <br>" + snapshot.val().message;
             html += "</li>";
             document.getElementById("messages").innerHTML += html;
         });
@@ -89,5 +89,4 @@
         }
     </script>
 </body>
-
 </html>
