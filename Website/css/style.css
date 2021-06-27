@@ -959,18 +959,11 @@
         width: 50%;
     }
 
-    @media only screen and (max-width: 1405px) {
-        #chartdiv2{
-            width: 100%;
-            height: 300px;
-        }
-        #chartdiv {
-            width: 100%;
-            height: 300px;
-        }
+    tspan {
+        color: var(--white);
     }
 
-    @media only screen and (max-width: 1275px) {
+    @media only screen and (max-width: 1280px) {
         .charts{
             display: block;
         }
@@ -986,7 +979,29 @@
             width: 100%;
         }
     }
-      
+
+    @media only screen and (max-width: 870px) {
+        #chartdiv1 {
+            width: 90%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media only screen and (max-width: 790px) {
+        #chartdiv2 {
+            width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #chartdiv2>div>svg>g>rect {
+            width: 90%;
+            height: auto;
+        }
+    }
+    
     /*Footer*/
 
     .section5 {
