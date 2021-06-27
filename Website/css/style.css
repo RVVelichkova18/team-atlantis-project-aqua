@@ -605,6 +605,9 @@
         background: var(--darkteal);
         border: rgba(0, 0, 0, 0.274) .1px solid;
         border-radius: 15px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 0;
+        gap: 3%;
     }
 
     .exit-button, .exit-button1, .exit-button2, .exit-button3, .exit-button4, .exit-button5, .exit-button6 {
@@ -618,18 +621,44 @@
         padding: .8em 1em;
         background: rgba(255, 255, 255, 0.144);
         box-shadow: rgba(255, 255, 255, 0.342) 0px 0px 0px 0.5px inset;
-        color: white;
+        color: var(--white);
         font-size: 1em;
     }
 
-    /*.lakes-photos {
+    .lake {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width:80%;
+        justify-self: center;
+        align-self: center;
+    }
+
+    #text {
+        overflow: auto;
+        text-align: justify;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 100%;
+        color: var(--white);
+        line-height: 140%;
+    }
+
+    .lakes-links{
+        text-decoration: none;
+        color: #2dffc7;
+        letter-spacing: 1px;
+        grid-column: 1/2;
+
+    }
+
+     /* .lakes-photos {
         width: 50%;
         border: rgba(0, 0, 0, 0.274) .1px solid;
         border-radius: 15px;
         margin-left: auto;
         margin-top: auto;
         
-    }*/
+    }  */
 
     /*Rotating cards*/
     
@@ -859,7 +888,7 @@
         margin-bottom: 3.5%;
     }
 
-    .birds-links, .lakes-links {
+    .birds-links  {
         text-decoration: none;
         color: #2dffc7;
         padding-top: 5px;

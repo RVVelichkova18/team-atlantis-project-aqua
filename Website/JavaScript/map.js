@@ -43,37 +43,37 @@ let marker7 = L.marker([42.59972457318483, 27.636966705322262], { icon: leafletI
 
 //add marker onclick functions
 marker1.on('click', function(e){
-    info1.style.display = 'block';
+    info1.style.display = 'grid';
     exitButton.style.display = 'block';
 });
 
 marker2.on('click', function(e){
-    info2.style.display = 'block';
+    info2.style.display = 'grid';
     exitButton1.style.display = 'block';
 });
 
 marker3.on('click', function(e){
-    info3.style.display = 'block';
+    info3.style.display = 'grid';
     exitButton2.style.display = 'block';
 });
 
 marker4.on('click', function(e){
-    info4.style.display = 'block';
+    info4.style.display = 'grid';
     exitButton3.style.display = 'block';
 });
 
 marker5.on('click', function(e){
-    info5.style.display = 'block';
+    info5.style.display = 'grid';
     exitButton4.style.display = 'block';
 });
 
 marker6.on('click', function(e){
-    info6.style.display = 'block';
+    info6.style.display = 'grid';
     exitButton5.style.display = 'block';
 });
 
 marker7.on('click', function(e){
-    info7.style.display = 'block';
+    info7.style.display = 'grid';
     exitButton6.style.display = 'block';
 });
 //exit button
