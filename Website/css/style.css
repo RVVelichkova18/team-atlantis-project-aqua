@@ -637,7 +637,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
         gap: 1em 5em;
-        padding: 5% 10% 5% 10%;
+        padding: 3% 10% 5% 10%;
     }
     
     .scene1,
@@ -888,6 +888,13 @@
         color: var(--white);
         margin-bottom: 1%;
         margin-top: 6%;
+    }
+
+    #birds-text {
+        text-align: center;
+        font-size: 200%;
+        color: var(--white);
+        margin-top: 3%;
     }
     
     /* Section 4 */
