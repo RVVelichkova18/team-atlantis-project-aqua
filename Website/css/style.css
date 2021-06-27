@@ -401,31 +401,6 @@
         margin-bottom: 250px;
     }
     
-    /* Login */
-
-    #login-button {
-        width: 15vh;
-        font-size: 40%;
-        padding: 0.6% 3% 0.8% 3%;
-        border: none;
-        background-color: var(--lightgreen);
-        color: var(--white);
-        border-radius: 10px;
-    }
-    
-    /* Logout */
-
-    #logout-button {
-        width: 15vh;
-        font-size: 40%;
-        padding: 0.6% 3% 0.8% 3%;
-        border: none;
-        background-color: #ff0000;
-        color: #ffffff;
-        border-radius: 10px;
-        display: none;
-    }
-    
     /* Section 2 */
 
     .section2 {

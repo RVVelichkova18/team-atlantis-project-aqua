@@ -6,8 +6,6 @@ body{
 }
 
 nav {
-  margin-top: -200px;
-  position: fixed;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -15,7 +13,6 @@ nav {
   min-height: 8vh;
   background-color: #007c94;
   z-index: 4;
-
 }
 
 .logo {
@@ -154,4 +151,49 @@ li{
 
 .delButton:hover{
   background-color: #d0d2d4;
+}
+
+li{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+#login-button {
+  width: 35vh;
+  height: 10vh;
+  font-size: 5vh;
+  padding: 0.6% 3% 0.8% 3%;
+  border: none;
+  background-color: #00ff00;
+  border-radius: 10px;
+  margin-top: 25%;
+}
+
+#login{
+  text-decoration: none;
+  color: white;
+}
+
+/* Logout */
+
+#logout-button {
+  width: 15vh;
+  height: 3vh;
+  padding: 0.6% 3% 0.8% 3%;
+  border: none;
+  background-color: #ff0000;
+  border-radius: 10px;
+}
+
+#logout{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+#forumNav{
+  display: flex;
+  justify-content: space-around;
 }
