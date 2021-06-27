@@ -14,9 +14,9 @@ bool birdMenu(vector<Bird*>& birds)
 	cout << "/-----------------------------\\" << endl;
 	cout << "|   Welcome to Bird Menu!      |" << endl;
 	cout << "| (0) Show birds       		|" << endl;
-	cout << "| (1) Add Birds                |" << endl;
-	cout << "| (2) Update Bird              |" << endl;
-	cout << "| (3) Delete Bird      		|" << endl;
+	cout << "| (1) Add Swimming Birds       |" << endl;
+	cout << "| (2) Add Jumping Birds        |" << endl;
+	cout << "| (3) Add Running Birds        |" << endl;
 	cout << "\\-----------------------------/" << endl;
 
 	bool flag;
@@ -33,17 +33,21 @@ bool birdMenu(vector<Bird*>& birds)
 		{
 			birds[i]->showInfo();
 		}
-
 		break;
+
 	case 1:
+		bird = enterSwimmingBird();
+		birds.push_back(bird);
+		break;
+
+	case 2:
 		bird = enterJumpingBird();
 		birds.push_back(bird);
 		break;
-	case 2:
-		//
-		break;
+
 	case 3:
-		//
+		bird = enterRunningBird();
+		birds.push_back(bird);
 		break;
 
 	default:

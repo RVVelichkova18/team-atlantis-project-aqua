@@ -66,7 +66,7 @@ std::string Bird::getMigration()
 
 void Bird::setSizeOfEggs(std::string sizeOfEggs)
 { 
-	this->name = sizeOfEggs; 
+	this->sizeOfEggs = sizeOfEggs;
 }
 
 std::string Bird::getSizeOfEggs()
@@ -91,15 +91,15 @@ void Bird::showInfo()
 
 SwimmingBird::SwimmingBird()
 {
-	this->ability = "swim";
+	this->ability = "Swim";
 }
 
 RunningBird::RunningBird()
 {
-	this->ability = "run";
+	this->ability = "Run";
 }
 
 JumpingBird::JumpingBird()
 {
-	this->ability = "jump";
+	this->ability = "Jump";
 }

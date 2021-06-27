@@ -63,7 +63,7 @@ JumpingBird* enterJumpingBird()
     cout << "|COLOR: "; getline(cin, str);
     jumpingBird->setColor(str);
 
-    cout << "|SIZE - (small,middle,big): "; getline(cin, str);
+    cout << "|SIZE - (small,medium,big): "; getline(cin, str);
     jumpingBird->setSize(str);
 
     cout << "|MIGRATION - (Y/N): "; getline(cin, str);
@@ -89,7 +89,7 @@ SwimmingBird* enterSwimmingBird()
     cout << "|COLOR: "; getline(cin, str);
     swimmingBird->setColor(str);
 
-    cout << "|SIZE - (small,middle,big): "; getline(cin, str);
+    cout << "|SIZE - (small,medium,big): "; getline(cin, str);
     swimmingBird->setSize(str);
 
     cout << "|MIGRATION - (Y/N): "; getline(cin, str);
@@ -115,7 +115,7 @@ RunningBird* enterRunningBird()
     cout << "|COLOR: "; getline(cin, str);
     runningBird->setColor(str);
 
-    cout << "|SIZE - (small,middle,big): "; getline(cin, str);
+    cout << "|SIZE - (small,medium,big): "; getline(cin, str);
     runningBird->setSize(str);
 
     cout << "|MIGRATION - (Y/N): "; getline(cin, str);

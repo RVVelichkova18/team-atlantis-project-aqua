@@ -51,15 +51,9 @@ bool mainMenu(vector<Lake*> lakes, vector<Bird*>& birds)
 }
 
 int main()
-{
-
-	//vector<SwimmingBird*> swimmingBirds;
-	//vector<RunningBird*> runningBirds;
-	//vector<JumpingBird*> jumpingBirds;
-	
+{	
 	vector<Bird*> birds;
 	vector<Lake*> lakes;
-
 
     do {
         flag = mainMenu(lakes, birds);

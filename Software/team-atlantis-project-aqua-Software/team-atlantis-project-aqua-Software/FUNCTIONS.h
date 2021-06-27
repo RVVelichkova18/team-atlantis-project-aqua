@@ -14,3 +14,4 @@ void checkLakeDepth(std::string depth, int& yearsOld);
 std::vector<LAKE_STRUCTURE> enterLake();
 JumpingBird* enterJumpingBird();
 SwimmingBird* enterSwimmingBird();
+RunningBird* enterRunningBird();
