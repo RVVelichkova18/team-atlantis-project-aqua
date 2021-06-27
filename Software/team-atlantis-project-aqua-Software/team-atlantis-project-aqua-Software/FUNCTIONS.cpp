@@ -143,7 +143,7 @@ LandslideLake* enterLandslideLake()
     cout << "|DEPTH - (normal,average,deep): "; getline(cin, str);
     landslideLake->setDepth(str);
 
-    cout << "|LENGTH - (Y/N): "; getline(cin, str);
+    cout << "LENGTH - (short or large): "; getline(cin, str);
     landslideLake->setLength(str);
 
     return landslideLake;
@@ -165,7 +165,7 @@ GlacialLake* enterGlacialLake()
     cout << "|DEPTH - (normal,average,deep): "; getline(cin, str);
     glacialLake->setDepth(str);
 
-    cout << "|LENGTH - (Y/N): "; getline(cin, str);
+    cout << "LENGTH - (short or large): "; getline(cin, str);
     glacialLake->setLength(str);
 
     return glacialLake;
@@ -187,7 +187,7 @@ OrganicLake* enterOrganicLake()
     cout << "|DEPTH - (normal,average,deep): "; getline(cin, str);
     organicLake->setDepth(str);
 
-    cout << "|LENGTH - (Y/N): "; getline(cin, str);
+    cout << "|LENGTH - (short or large): "; getline(cin, str);
     organicLake->setLength(str);
 
     return organicLake;
