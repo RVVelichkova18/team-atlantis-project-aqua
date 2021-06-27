@@ -127,7 +127,7 @@
         }
     }
     
-    @media screen and (max-width: 770px) {
+    @media only screen and (max-width: 770px) {
         body {
             overflow-x: hidden;
         }
@@ -267,7 +267,7 @@
         overflow:hidden;
     }
 
-    @media (min-width: 1610px) {
+    @media only screen and (min-width: 1610px) {
         .container3 {
             display: none;
         }
@@ -295,7 +295,7 @@
         display: none;
     }
 
-    @media (max-width: 450px) {
+    @media only screen and (max-width: 450px) {
         .glassmorphism4 {
             top: 3000px;
         }
@@ -383,7 +383,7 @@
         z-index: 2;
     }
 
-    @media (max-width: 550px) {
+    @media only screen and (max-width: 550px) {
         #rocks, #bird1, #bird2 {
             display: none;
         }
@@ -491,7 +491,7 @@
         color: var(--white);
     }
     
-    @media (max-width: 880px) {
+    @media only screen and (max-width: 880px) {
         #live-video-grid {
             display: block;
         }
@@ -517,13 +517,6 @@
 
         #tips-button {
             margin-bottom: 7%;
-        }
-
-        #search-button {
-            width: 80%;
-            height: 1%;
-            display: block;
-            margin: 7% auto 1% auto;
         }
 
         .section3 {
@@ -552,6 +545,26 @@
         background-color: var(--darkteal);
         color: var(--white);
         border-radius: 12px;
+    }
+
+    @media only screen and (max-width: 880px) {
+        #search-button {
+            width: 60%;
+            margin-left: 20%;
+            height: 1.5%;
+            display: block;
+            margin: 7% auto 1% auto;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        #search-button {
+            width: 80%;
+            margin-left: 10%;
+            height: 1%;
+            display: block;
+            margin: 7% auto 1% auto;
+        }
     }
     
     #search-button:hover>.search-text {
@@ -987,7 +1000,7 @@
         width: 50%;
     }
 
-    @media (max-width: 1405px) {
+    @media only screen and (max-width: 1405px) {
         #chartdiv2{
             width: 100%;
             height: 300px;
@@ -998,7 +1011,7 @@
         }
     }
 
-    @media (max-width: 1275px) {
+    @media only screen and (max-width: 1275px) {
         .charts{
             display: block;
         }
@@ -1029,7 +1042,7 @@
         bottom: 0;
     }
     
-    @media (max-height:800px) {
+    @media only screen and (max-height:800px) {
         footer {
             position: static;
         }
@@ -1171,7 +1184,7 @@
         margin-bottom: 5px;
     }
     
-    @media (max-width: 880px) {
+    @media only screen and (max-width: 880px) {
         .footer-distributed .footer-left,
         .footer-distributed .footer-center,
         .footer-distributed .footer-right {
