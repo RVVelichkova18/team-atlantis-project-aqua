@@ -23,6 +23,12 @@
         text-decoration: none;
     }
     
+    /* Custom selection */
+    ::selection{
+        color: white;
+        background-color:rgba(44, 48, 116, 0.589);
+    }
+
     /* Custom scrollbar */
 
     body::-webkit-scrollbar {
