@@ -53,7 +53,6 @@ JumpingBird* enterJumpingBird()
 {
     JumpingBird* jumpingBird = new JumpingBird();
     string str; 
-    int yearsOfLife;
 
     cin.ignore(INT_MAX, '\n');
 
@@ -79,7 +78,6 @@ SwimmingBird* enterSwimmingBird()
 {
     SwimmingBird* swimmingBird = new SwimmingBird();
     string str;
-    int yearsOfLife;
 
     cin.ignore(INT_MAX, '\n');
 
@@ -105,7 +103,6 @@ RunningBird* enterRunningBird()
 {
     RunningBird* runningBird = new RunningBird();
     string str;
-    int yearsOfLife;
 
     cin.ignore(INT_MAX, '\n');
 
@@ -129,46 +126,72 @@ RunningBird* enterRunningBird()
 
 // ======================= LAKE =============================
 
-void checkLakeDepth(string depth, int& yearsOld)
+
+LandslideLake* enterLandslideLake()
 {
-    if (depth == "normal")
-    {
-        yearsOld = 8;
-    }
-    else if (depth == "average")
-    {
-        yearsOld = 18;
-    }
-    else if (depth == "deep")
-    {
-        yearsOld = 28;
-    }
-}
+    LandslideLake* landslideLake = new LandslideLake();
 
-/*
-vector <LAKE_STRUCTURE> enterLake()
-{
-    LAKE_STRUCTURE* lakes = new LAKE_STRUCTURE;
-    vector<LAKE_STRUCTURE> exampleVector;
+    string str;
 
-    int n;
-    cout << "How many lakes do you want to add: "; cin >> n;
-    cout << "================EnterLake===================" << endl;
-
-    for (int i = 0; i < n; i++)
-    {
-        cout << "|NAME: "; getline(cin, lakes->name);
-        cout << "|FISH(Y/N): "; getline(cin, lakes->fish);
-        cout << "|DEPTH(normal, average, deep): "; getline(cin, lakes->depth);
-        cout << "|LENGTH: "; getline(cin, lakes->length);
-        checkLakeDepth(lakes->depth, lakes->yearsOld);
-
-        LAKE_STRUCTURE vab = { lakes->name, lakes->fish, lakes->depth, lakes->yearsOld, lakes->length };
-
-        exampleVector.push_back(vab);
-    }
     cin.ignore(INT_MAX, '\n');
 
-    return exampleVector;
+    cout << "|NAME: "; getline(cin, str);
+    landslideLake->setName(str);
+
+    cout << "|FISH - (Y/N): "; getline(cin, str);
+    landslideLake->setFish(str);
+
+    cout << "|DEPTH - (normal,average,deep): "; getline(cin, str);
+    landslideLake->setDepth(str);
+
+    cout << "|LENGTH - (Y/N): "; getline(cin, str);
+    landslideLake->setLength(str);
+
+    return landslideLake;
 }
-*/
+
+GlacialLake* enterGlacialLake()
+{
+    GlacialLake* glacialLake = new GlacialLake();
+
+    string str;
+
+    cin.ignore(INT_MAX, '\n');
+
+    cout << "|NAME: "; getline(cin, str);
+    glacialLake->setName(str);
+
+    cout << "|FISH - (Y/N): "; getline(cin, str);
+    glacialLake->setFish(str);
+
+    cout << "|DEPTH - (normal,average,deep): "; getline(cin, str);
+    glacialLake->setDepth(str);
+
+    cout << "|LENGTH - (Y/N): "; getline(cin, str);
+    glacialLake->setLength(str);
+
+    return glacialLake;
+}
+
+OrganicLake* enterOrganicLake()
+{
+    OrganicLake* organicLake = new OrganicLake();
+
+    string str;
+
+    cin.ignore(INT_MAX, '\n');
+
+    cout << "|NAME: "; getline(cin, str);
+    organicLake->setName(str);
+
+    cout << "|FISH - (Y/N): "; getline(cin, str);
+    organicLake->setFish(str);
+
+    cout << "|DEPTH - (normal,average,deep): "; getline(cin, str);
+    organicLake->setDepth(str);
+
+    cout << "|LENGTH - (Y/N): "; getline(cin, str);
+    organicLake->setLength(str);
+
+    return organicLake;
+}
