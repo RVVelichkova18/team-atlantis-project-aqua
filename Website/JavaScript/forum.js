@@ -20,9 +20,9 @@ auth.onAuthStateChanged(user => {
         login.style.display = '';
     }
 });
+let RNum = Math.random();
+let myName = "User " + RNum;
 
-let myName = prompt("Enter your name here");
-    console.log(myName);
         const sendMessage =() =>{
             let message = document.getElementById("message").value;
             firebase.database().ref("messages").push().set({

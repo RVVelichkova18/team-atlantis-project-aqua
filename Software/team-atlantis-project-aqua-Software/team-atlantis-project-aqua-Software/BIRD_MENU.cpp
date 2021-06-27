@@ -14,7 +14,7 @@ bool birdMenu(vector<Bird*>& birds)
 	cout << "/-----------------------------\\" << endl;
 	cout << "|   Welcome to Bird Menu!      |" << endl;
 	cout << "| (0) Show birds       		|" << endl;
-	cout << "| (1) Add Jumping Bird         |" << endl;
+	cout << "| (1) Add Birds                |" << endl;
 	cout << "| (2) Update Bird              |" << endl;
 	cout << "| (3) Delete Bird      		|" << endl;
 	cout << "\\-----------------------------/" << endl;

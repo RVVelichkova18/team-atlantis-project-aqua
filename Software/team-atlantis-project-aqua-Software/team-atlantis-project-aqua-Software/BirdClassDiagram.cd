@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="Bird">
-    <Position X="10.5" Y="2.75" Width="2.5" />
+    <Position X="8.25" Y="1.25" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIIAAAAAAIIBIAAAAAAEAACAAAAAAAAAAAA=</HashCode>
+      <HashCode>AACAAAAAAIIAAAgAAIYBIIwAAAgEAADAEAAEgAAIAAA=</HashCode>
       <FileName>BIRD_CLASS.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SwimmingBird">
-    <Position X="10" Y="5.75" Width="3.5" />
+    <Position X="8.75" Y="8" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>BIRD_CLASS.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RunningBird">
-    <Position X="5.25" Y="5.75" Width="3.5" />
+    <Position X="4" Y="8" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAIgAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>BIRD_CLASS.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="JumpingBird">
-    <Position X="14.5" Y="5.75" Width="3.5" />
+    <Position X="13.5" Y="8" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAgAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>BIRD_CLASS.h</FileName>
     </TypeIdentifier>
   </Class>

@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BIRD_CLASScpp.cpp" />
     <ClCompile Include="BIRD_MENU.cpp" />
     <ClCompile Include="FUNCTIONS.cpp" />
     <ClCompile Include="LAKE_MENU.cpp" />
