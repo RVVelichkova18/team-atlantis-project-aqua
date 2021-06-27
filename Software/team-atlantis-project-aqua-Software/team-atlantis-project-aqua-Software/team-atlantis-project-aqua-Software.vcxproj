@@ -142,6 +142,7 @@
     <ClCompile Include="BIRD_CLASS.cpp" />
     <ClCompile Include="BIRD_MENU.cpp" />
     <ClCompile Include="FUNCTIONS.cpp" />
+    <ClCompile Include="LAKE_CLASS.cpp" />
     <ClCompile Include="LAKE_MENU.cpp" />
     <ClCompile Include="mainMenu.cpp" />
   </ItemGroup>

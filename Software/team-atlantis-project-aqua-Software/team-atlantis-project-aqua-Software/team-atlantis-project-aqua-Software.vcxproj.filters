@@ -30,6 +30,9 @@
     <ClCompile Include="BIRD_CLASS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="LAKE_CLASS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FUNCTIONS.h">

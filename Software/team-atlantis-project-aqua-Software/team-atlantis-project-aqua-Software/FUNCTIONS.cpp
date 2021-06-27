@@ -130,7 +130,6 @@ RunningBird* enterRunningBird()
 LandslideLake* enterLandslideLake()
 {
     LandslideLake* landslideLake = new LandslideLake();
-
     string str;
 
     cin.ignore(INT_MAX, '\n');
@@ -144,7 +143,7 @@ LandslideLake* enterLandslideLake()
     cout << "|DEPTH - (normal,average,deep): "; getline(cin, str);
     landslideLake->setDepth(str);
 
-    cout << "|LENGTH - (Y/N): "; getline(cin, str);
+    cout << "LENGTH - (short or large): "; getline(cin, str);
     landslideLake->setLength(str);
 
     return landslideLake;
@@ -153,7 +152,6 @@ LandslideLake* enterLandslideLake()
 GlacialLake* enterGlacialLake()
 {
     GlacialLake* glacialLake = new GlacialLake();
-
     string str;
 
     cin.ignore(INT_MAX, '\n');
@@ -167,7 +165,7 @@ GlacialLake* enterGlacialLake()
     cout << "|DEPTH - (normal,average,deep): "; getline(cin, str);
     glacialLake->setDepth(str);
 
-    cout << "|LENGTH - (Y/N): "; getline(cin, str);
+    cout << "LENGTH - (short or large): "; getline(cin, str);
     glacialLake->setLength(str);
 
     return glacialLake;
@@ -176,7 +174,6 @@ GlacialLake* enterGlacialLake()
 OrganicLake* enterOrganicLake()
 {
     OrganicLake* organicLake = new OrganicLake();
-
     string str;
 
     cin.ignore(INT_MAX, '\n');
@@ -190,7 +187,7 @@ OrganicLake* enterOrganicLake()
     cout << "|DEPTH - (normal,average,deep): "; getline(cin, str);
     organicLake->setDepth(str);
 
-    cout << "|LENGTH - (Y/N): "; getline(cin, str);
+    cout << "|LENGTH - (short or large): "; getline(cin, str);
     organicLake->setLength(str);
 
     return organicLake;

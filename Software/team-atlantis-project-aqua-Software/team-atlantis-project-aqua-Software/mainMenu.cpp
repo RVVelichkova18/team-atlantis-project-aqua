@@ -14,7 +14,7 @@ using namespace std;
 
 bool flag;
 
-bool mainMenu(vector<Lake*> lakes, vector<Bird*>& birds)
+bool mainMenu(vector<Lake*>& lakes, vector<Bird*>& birds)
 {
 	cout << endl;
 	cout << "/-----------------------------\\" << endl;
