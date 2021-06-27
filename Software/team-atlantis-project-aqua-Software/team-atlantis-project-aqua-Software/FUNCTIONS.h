@@ -1,10 +1,10 @@
 #pragma once
 #include <string>
 #include <vector>
-#include "BIRD_STRUCTURE.h"
-#include "BIRD_CLASS.h"
 #include "LAKE_CLASS.h"
 #include "LAKE_STRUCTURE.h"
+#include "BIRD_STRUCTURE.h"
+#include "BIRD_CLASS.h"
 
 void checkManyInput(int& a);
 void openWebsite();
@@ -15,3 +15,4 @@ SwimmingBird* enterSwimmingBird();
 RunningBird* enterRunningBird();
 OrganicLake* enterOrganicLake();
 GlacialLake* enterGlacialLake();
+LandslideLake* enterLandslideLake();

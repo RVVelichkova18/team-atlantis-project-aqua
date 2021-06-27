@@ -130,7 +130,6 @@ RunningBird* enterRunningBird()
 LandslideLake* enterLandslideLake()
 {
     LandslideLake* landslideLake = new LandslideLake();
-
     string str;
 
     cin.ignore(INT_MAX, '\n');
@@ -153,7 +152,6 @@ LandslideLake* enterLandslideLake()
 GlacialLake* enterGlacialLake()
 {
     GlacialLake* glacialLake = new GlacialLake();
-
     string str;
 
     cin.ignore(INT_MAX, '\n');
@@ -176,7 +174,6 @@ GlacialLake* enterGlacialLake()
 OrganicLake* enterOrganicLake()
 {
     OrganicLake* organicLake = new OrganicLake();
-
     string str;
 
     cin.ignore(INT_MAX, '\n');

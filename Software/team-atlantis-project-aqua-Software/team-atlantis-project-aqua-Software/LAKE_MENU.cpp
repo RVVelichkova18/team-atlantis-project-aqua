@@ -7,7 +7,7 @@
 
 using namespace std;
 
-bool lakeMenu(vector<Lake*> lakes)
+bool lakeMenu(vector<Lake*>& lakes)
 {
 	system("CLS");
 	cout << endl;

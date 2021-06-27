@@ -2,47 +2,31 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "LAKE_STRUCTURE.h"
-#include "FUNCTIONS.h"
 
 class Lake
 {
 public:
-	void showWhatLakeTypeIs() { std::cout << "The lake is " << this->type << std::endl; };
+	virtual void showWhatLakeTypeIs();
 
 public:
-	void setName(std::string name) { this->name = name; }
-	std::string getName() { return this->name; }
+	void setName(std::string name);
+	std::string getName();
 
-	void setFish(std::string fish) { this->fish = fish; }
-	std::string getFish() { return this->fish; }
+	void setFish(std::string fish);
+	std::string getFish();
 
-	void setDepth(std::string depth) { 
-		
-		this->depth = depth;
+	void setDepth(std::string depth);
+	std::string getDepth();
 
-		if (depth == "normal")
-		{
-			this->yearsOld = 8;
-		}
-		else if (depth == "average")
-		{
-			this->yearsOld = 18;
-		}
-		else if (depth == "deep")
-		{
-			this->yearsOld = 28;
-		}
-	}
-	std::string getDepth() { return this->depth; }
+	int getYearsOld();
 
-	int getYearsOld() { return this->yearsOld; }
+	void setLength(std::string length);
+	std::string getLength();
 
-	void setLength(std::string length) { this->length = length; }
-	std::string getLength() { return this->length; }
+	void showInfo();
 
+protected:
 	std::string type;
-
 	std::string name;
 	std::string fish; //y or n
 	std::string depth; // normal, average, deep
@@ -53,32 +37,23 @@ public:
 class OrganicLake : public Lake
 {
 public:
-	OrganicLake() 
-	{ 
-		this->type = "Organic";
-	}
+	OrganicLake();
 
-//TABLE 1
+	//TABLE 1
 };
 
 class GlacialLake : public Lake
 {
 public:
-	GlacialLake() 
-	{ 
-		this->type = "Glacial";
-	}
+	GlacialLake();
 
-//TABLE 2
+	//TABLE 2
 };
 
 class LandslideLake : public Lake
 {
 public:
-	LandslideLake()
-	{
-		this->type = "Landslide";
-	}
+	LandslideLake();
 
-//TABLE 3
+	//TABLE 3
 };

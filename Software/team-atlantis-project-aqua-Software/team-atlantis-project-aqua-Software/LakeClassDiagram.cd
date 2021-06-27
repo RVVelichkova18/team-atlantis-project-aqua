@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical" MembersFormat="FullSignature">
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical" MembersFormat="NameAndType">
   <Class Name="Lake">
-    <Position X="16.25" Y="1.75" Width="2.5" />
+    <Position X="16.25" Y="3" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAIBACAAEACAAAEAAAAAIAAiFAABAgAAEIIIAAAA=</HashCode>
+      <HashCode>AAAAAIBACAAEAAAAAEAAAAQIAAiFAABAgAAEIIIAAAA=</HashCode>
       <FileName>LAKE_CLASS.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Organic">
-    <Position X="16.75" Y="7.5" Width="1.5" />
+  <Class Name="OrganicLake">
+    <Position X="16.5" Y="7.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>LAKE_CLASS.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Glacial">
-    <Position X="12.75" Y="7.5" Width="1.5" />
+  <Class Name="GlacialLake">
+    <Position X="13.25" Y="7.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
       <FileName>LAKE_CLASS.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Landslide">
-    <Position X="21" Y="7.5" Width="1.5" />
+  <Class Name="LandslideLake">
+    <Position X="19.5" Y="7.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>LAKE_CLASS.h</FileName>
     </TypeIdentifier>
   </Class>

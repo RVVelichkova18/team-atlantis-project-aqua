@@ -29,7 +29,7 @@ bool birdMenu(vector<Bird*>& birds)
 	switch (option)
 	{
 	case 0:
-		for (int i = 0; i < birds.size(); i++)
+		for (size_t i = 0; i < birds.size(); i++)
 		{
 			birds[i]->showInfo();
 		}
