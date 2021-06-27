@@ -525,6 +525,15 @@
         font-size: 1em;
     }
 
+    /*.lakes-photos {
+        width: 50%;
+        border: rgba(0, 0, 0, 0.274) .1px solid;
+        border-radius: 15px;
+        margin-left: auto;
+        margin-top: auto;
+        
+    }*/
+
     /*Rotating cards*/
     
     #info-cards {
@@ -753,7 +762,7 @@
         margin-bottom: 3.5%;
     }
 
-    .birds-links {
+    .birds-links, .lakes-links {
         text-decoration: none;
         color: #2dffc7;
         padding-top: 5px;
