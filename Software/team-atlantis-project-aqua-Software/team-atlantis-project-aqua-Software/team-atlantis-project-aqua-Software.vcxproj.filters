@@ -27,6 +27,9 @@
     <ClCompile Include="LAKE_MENU.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BIRD_CLASScpp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FUNCTIONS.h">
