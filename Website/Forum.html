@@ -67,8 +67,8 @@
             var html = "";
                 html += "<li id='message-" + snapshot.key + "' class='text-style'>";
                     if(snapshot.val().sender == myName){
-                        html += "<button data-id='" + snapshot.key + "' onclick='deleteMessage(this);'>";
-                        html += "Delete";
+                        html += "<button data-id='" + snapshot.key + "' class='delButton' onclick='deleteMessage(this);'>";
+                        html += "🗑️   ";
                         html += "</button>";
                     }
             html += ""+ snapshot.val().sender+" : <br>" + snapshot.val().message;
