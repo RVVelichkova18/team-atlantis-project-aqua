@@ -6,6 +6,7 @@
         --ashblue: #617ca9;
         --darkblue: #003479;
         --lightteal: #00c0c3;
+        --mediumteal: #10bcdf;
         --drakgreen: #017e5c;
         --lightgreen: #8ed32f;
         --yellow: #f3d100;
@@ -207,8 +208,8 @@
         border-bottom: 3px solid rgba(250, 252, 153, 0.3);
         box-shadow: 20px 20px 40px -6px rgba(36, 68, 49, 0.075);
         background: rgba(255, 255, 255, 0.4);
-        -webkit-backdrop-filter: blur(70px);
-        backdrop-filter: blur(70px);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
         z-index: -1;
     }
 
@@ -234,12 +235,100 @@
         border-right: 6px solid rgba(142, 251, 255, 0.3);
         border-bottom: 3px solid rgba(250, 252, 153, 0.3);
         box-shadow: 20px 20px 40px -6px rgba(36, 68, 49, 0.075);
-        background: rgba(255, 255, 255, 0.4);
-        -webkit-backdrop-filter: blur(70px);
-        backdrop-filter: blur(70px);
+        background: rgba(255, 255, 255, 0.1);
+        -webkit-backdrop-filter: blur(1px);
+        backdrop-filter: blur(1px);
         z-index: -1;
-        overflow: hidden;
     }
+
+    .glassmorphism3 {
+        width: 600px;
+        height: 600px;
+        right: -50px;
+        border-radius: 50%;
+        border-left: 10px solid rgba(255, 255, 255, 0.3);
+        border-top: 7px solid rgba(255, 255, 255, 0.2);
+        border-right: 6px solid rgba(142, 251, 255, 0.3);
+        border-bottom: 3px solid rgba(250, 252, 153, 0.3);
+        box-shadow: 20px 20px 40px -6px rgba(36, 68, 49, 0.075);
+        background: rgba(255, 255, 255, 0.1);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        z-index: -1;
+    }
+
+    .container3 {
+        width: 550px;
+        height: 650px;
+        z-index: -1;
+        position: absolute;
+        top: 1950px;
+        right: 0px;
+        overflow:hidden;
+    }
+
+    @media (min-width: 1610px) {
+        .container3 {
+            display: none;
+        }
+    }
+
+    .glassmorphism4 {
+        width: 470px;
+        height: 470px;
+        position: absolute;
+        top: 2400px;
+        left: -140px;
+        border-radius: 50%;
+        border-left: 10px solid rgba(255, 255, 255, 0.3);
+        border-top: 7px solid rgba(255, 255, 255, 0.2);
+        border-right: 6px solid rgba(142, 251, 255, 0.3);
+        border-bottom: 3px solid rgba(250, 252, 153, 0.3);
+        box-shadow: 20px 20px 40px -6px rgba(36, 68, 49, 0.075);
+        background: rgba(255, 255, 255, 0.4);
+        -webkit-backdrop-filter: blur(1px);
+        backdrop-filter: blur(1px);
+        z-index: -1;
+    }
+
+    .container5 {
+        display: none;
+    }
+
+    @media (max-width: 450px) {
+        .glassmorphism4 {
+            top: 3000px;
+        }
+
+        .glassmorphism5 {
+        width: 600px;
+        height: 600px;
+        right: -150px;
+        border-radius: 50%;
+        border-left: 10px solid rgba(255, 255, 255, 0.3);
+        border-top: 7px solid rgba(255, 255, 255, 0.2);
+        border-right: 6px solid rgba(142, 251, 255, 0.3);
+        border-bottom: 3px solid rgba(250, 252, 153, 0.3);
+        box-shadow: 20px 20px 40px -6px rgba(36, 68, 49, 0.075);
+        background: rgba(255, 255, 255, 0.1);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        z-index: -1;
+    }
+
+    .container5 {
+        width: 450px;
+        height: 650px;
+        z-index: -1;
+        position: absolute;
+        display: inline;
+        top: 3800px;
+        right: 0px;
+        overflow:hidden;
+    }
+    }
+
+    
     
     /* Section 1 */
 
@@ -384,6 +473,23 @@
     #save-the-birds {
         align-self: center;
     }
+
+    #tips-button {
+        width: 70%;
+        font-size: 140%;
+        padding: 0.8% 3% 1.2% 4%;
+        border: none;
+        background-color: var(--lightgreen);
+        color: var(--white);
+        border-radius: 12px;
+        z-index: 3;
+        display: block;
+        margin: 15px auto 0 auto;
+    }
+
+    #tips-button>a {
+        color: var(--white);
+    }
     
     @media (max-width: 880px) {
         #live-video-grid {
@@ -431,24 +537,9 @@
         grid-row: 3/4;
         grid-column: 1/3;
         background-color: var(--mediumblue);
-        z-index: -2;
+        z-index: 0;
     }
 
-    #tips-button {
-        width: 70%;
-        font-size: 140%;
-        padding: 0.8% 3% 1.2% 4%;
-        border: none;
-        background-color: var(--lightgreen);
-        color: var(--white);
-        border-radius: 12px;
-        z-index: 3;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 15px;
-    }
-    
     /* Search button */
 
     #search-button {
@@ -804,8 +895,8 @@
     .section4 {
         grid-row: 4/5;
         grid-column: 1/3;
-        background-color: #049bb8;
-        z-index: -2;
+        background-color: var(--mediumteal);
+        z-index: 1;
     }
 
     /* Charts */
