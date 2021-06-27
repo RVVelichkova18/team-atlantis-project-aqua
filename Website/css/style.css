@@ -591,9 +591,6 @@
         height: 400px;
         display: none;
         background: var(--darkteal);
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr 0;
-        gap: 3%;
     }
 
     .exit-button, .exit-button1, .exit-button2, .exit-button3, .exit-button4, .exit-button5, .exit-button6 {
@@ -611,31 +608,20 @@
         font-size: 1em;
     }
 
-    .lake {
-        grid-column: 2/3;
-        grid-row: 1/3;
-        border-radius: 15px;
-        justify-self: right;
-        align-self: center;
-        height: 100%;
-        margin-right: 6%;
-    }
-
     #text {
         overflow: auto;
         font-size: 18px;
-        text-align: left;
-        grid-column: 1/2;
-        grid-row: 1/3;
-        height: 96%;
+        text-align: center;
+        height: 80%;
         color: var(--white);
         line-height: 140%;
-        padding: 0 30% 0 30%;
+        justify-self: center;
+        align-self: center;
+        padding: 10% 5% 10% 5%;
+    }
+
+    #text>ul {
         list-style-type: none;
-        z-index:1;
-        width: 50%;
-        height: 100%;
-        background-color: var(--darkteal);
     }
 
     .lakes-links{
@@ -645,15 +631,6 @@
         grid-column: 1/2;
 
     }
-
-     /* .lakes-photos {
-        width: 50%;
-        border: rgba(0, 0, 0, 0.274) .1px solid;
-        border-radius: 15px;
-        margin-left: auto;
-        margin-top: auto;
-        
-    }  */
 
     /*Rotating cards*/
     
