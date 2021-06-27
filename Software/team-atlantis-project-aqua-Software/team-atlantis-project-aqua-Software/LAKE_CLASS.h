@@ -5,45 +5,65 @@
 #include "LAKE_STRUCTURE.h"
 #include "FUNCTIONS.h"
 
-class LAKE
+class Lake
 {
-private:
-	std::string depth;
-	std::vector<LAKE_STRUCTURE> lake;
-};
-
-class ORGANIC : LAKE
-{
-private:
-	std::string depth;
+public:
+	void showWhatLakeTypeIs() { std::cout << "The lake is " << this->type << std::endl; };
 
 public:
-	ORGANIC() { this->depth = "ORGANIC"; }
-	//void enterData(std::vector<LAKE_STRUCTURE> lake) { lake = enterLake(); }
+	void setName(std::string name) { this->name = name; }
+	std::string getName() { return this->name; }
+
+	void setFish(std::string fish) { this->fish = fish; }
+	std::string getFish() { return this->fish; }
+
+	void setDepth(std::string depth) { this->depth = depth; }
+	std::string getDepth() { return this->depth; }
+
+	void setYearsOld(int yearsOld) { this->yearsOld = yearsOld; }
+	int getYearsOld() { return this->yearsOld; }
+
+	void setLength(std::string length) { this->length = length; }
+	std::string getLength() { return this->length; }
+
+	std::string type;
+
+	std::string name;
+	std::string fish; //y or n
+	std::string depth; // normal, average, deep
+	int yearsOld;
+	std::string length; // short or large
+};
+
+class Organic : public Lake
+{
+public:
+	Organic() 
+	{ 
+		this->type = "Organic";
+	}
 
 //TABLE 1
 };
 
-class GLACIAL : LAKE
+class Glacial : public Lake
 {
-private:
-	std::string depth;
-
 public:
-	GLACIAL() { this->depth = "GLACIAL"; }
-	//void enterData(std::vector<LAKE_STRUCTURE> lake) { lake = enterLake(); }
+	Glacial() 
+	{ 
+		this->type = "Glacial";
+	}
 
 //TABLE 2
 };
 
-class LANDSLIDE : LAKE
+class Landslide : public Lake
 {
-private:
-	std::string depth;
-
 public:
-	LANDSLIDE() { this->depth = "LANDSLIDE"; }
-	//void enterData(std::vector<LAKE_STRUCTURE> lake) { lake = enterLake(); }
+	Landslide()
+	{
+		this->type = "Landslide";
+	}
 
 //TABLE 3
 };

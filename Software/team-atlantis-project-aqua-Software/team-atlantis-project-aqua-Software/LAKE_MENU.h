@@ -4,4 +4,4 @@
 #include "LAKE_CLASS.h"
 #include "LAKE_STRUCTURE.h"
 
-bool lakeMenu(ORGANIC organicLake, GLACIAL glacialLake, LANDSLIDE landslideLake);
+bool lakeMenu(std::vector<Lake*> lakes);

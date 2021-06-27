@@ -14,9 +14,8 @@ using namespace std;
 
 bool flag;
 
-bool mainMenu(SWIM swimmingBird, RUN runningBird, JUMP jumpingBird, ORGANIC organicLake, GLACIAL glacialLake, LANDSLIDE landslideLake)
+bool mainMenu(vector<Lake*> lakes, vector<Bird*>& birds)
 {
-	system("CLS");
 	cout << endl;
 	cout << "/-----------------------------\\" << endl;
 	cout << "|   Welcome to Project-Aqua!   |" << endl;
@@ -33,10 +32,10 @@ bool mainMenu(SWIM swimmingBird, RUN runningBird, JUMP jumpingBird, ORGANIC orga
 	switch (option)
 	{
 	case 1:
-		birdMenu(swimmingBird, runningBird, jumpingBird);
+		birdMenu(birds);
 		break;
 	case 2:
-		lakeMenu(organicLake, glacialLake, landslideLake);
+		lakeMenu(lakes);
 		break;
 	case 3:
 		openWebsite(); // fix
@@ -53,17 +52,16 @@ bool mainMenu(SWIM swimmingBird, RUN runningBird, JUMP jumpingBird, ORGANIC orga
 
 int main()
 {
-	// =BIRD=
-	SWIM swimmingBird;
-	RUN runningBird;
-	JUMP jumpingBird;
 
-	// =LAKE=
-	ORGANIC organicLake;
-	GLACIAL glacialLake;
-	LANDSLIDE landslideLake;
+	//vector<SwimmingBird*> swimmingBirds;
+	//vector<RunningBird*> runningBirds;
+	//vector<JumpingBird*> jumpingBirds;
+	
+	vector<Bird*> birds;
+	vector<Lake*> lakes;
+
 
     do {
-        flag = mainMenu(swimmingBird, runningBird, jumpingBird, organicLake, glacialLake, landslideLake);
+        flag = mainMenu(lakes, birds);
     } while (flag);
 }
