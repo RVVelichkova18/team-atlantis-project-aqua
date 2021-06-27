@@ -36,11 +36,9 @@
 We have created a website, app and database that help people learn and exchange ideas about lakes, endangered birds and their habitats.
 
 ## Documentation and Presentation 📄 <a name = "about"></a>
-**<a href = "">Documentation</a>**
+**<a href = "https://codingburgas-my.sharepoint.com/:w:/r/personal/rvvelichkova18_codingburgas_bg/_layouts/15/Doc.aspx?sourcedoc=%7B622D4754-D6B2-4248-A690-1B774D424E0A%7D&file=atlantis_documentation.docx&action=default&mobileredirect=true">Documentation</a>**
 <br>
-**<a href = "">JS Documentation</a>**
-<br>
-**<a href = "">Presentation</a>**
+**<a href = "https://codingburgas-my.sharepoint.com/:p:/r/personal/rvvelichkova18_codingburgas_bg/_layouts/15/Doc.aspx?sourcedoc=%7BB8ED89AF-8A01-49CC-B42A-1DE7366CD311%7D&file=atlantis_presentation.pptx&action=edit&mobileredirect=true">Presentation</a>**
 
 ```
 Thank you for scrolling this far! Show some ❤ by starring the repo!
