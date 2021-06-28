@@ -16,3 +16,4 @@ RunningBird* enterRunningBird();
 OrganicLake* enterOrganicLake();
 GlacialLake* enterGlacialLake();
 LandslideLake* enterLandslideLake();
+void checkBirdInput(std::vector<Bird*>& birds, Bird* bird);
