@@ -27,7 +27,7 @@ void insertCustomer(nanodbc::connection conn, string ability, string name, strin
 
             VALUES
 
-            (?, ?, ?, ?, ?, ?, ?, ?)
+            (?, ?, ?, ?, ?, ?, ?)
 
     )"));
     statement.bind(0, ability.c_str());

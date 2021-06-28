@@ -53,21 +53,23 @@ bool mainMenu(vector<Lake*>& lakes, vector<Bird*>& birds)
 
 int main()
 {	
-	/*
+	
 	try
 	{
-		nanodbc::string connstr = NANODBC_TEXT("DRIVER={SQL Server};SERVER=(localdb)\\MSSQLLocalDB;DATABASE=team-atlantis-project-aqua;Trusted_Connection=yes;"); // an ODBC connection string to your database
+		nanodbc::string connstr = NANODBC_TEXT("DRIVER={ODBC Driver 17 for SQL Server};SERVER=(localdb)\\MSSQLLocalDB;DATABASE=team-atlantis-project-aqua;Trusted_Connection=yes;"); // an ODBC connection string to your database
 		nanodbc::connection conn(connstr);
 
-		insertCustomer(conn, "Jump", "Nako", "Red", "small", "10", "Y", "tiny");
-		return EXIT_SUCCESS;
+		insertCustomer(conn, "Swim", "Colibri", "Green", "middle", "18", "Y", "tiny");
+		insertCustomer(conn, "Run", "Colibri", "Green", "middle", "18", "Y", "tiny");
+		insertCustomer(conn, "Jump", "Colibri", "Green", "middle", "18", "Y", "tiny");
+		//return EXIT_SUCCESS;
 	}
 	catch (std::exception& e)
 	{
 		std::cerr << e.what() << std::endl;
 		return EXIT_FAILURE;
 	}
-	*/
+
 	vector<Bird*> birds;
 	vector<Lake*> lakes;
 
