@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "DataBase.h"
 #include "FUNCTIONS.h"
 #include "BIRD_STRUCTURE.h"
 #include "BIRD_CLASS.h"
@@ -52,6 +53,21 @@ bool mainMenu(vector<Lake*>& lakes, vector<Bird*>& birds)
 
 int main()
 {	
+	/*
+	try
+	{
+		nanodbc::string connstr = NANODBC_TEXT("DRIVER={SQL Server};SERVER=(localdb)\\MSSQLLocalDB;DATABASE=team-atlantis-project-aqua;Trusted_Connection=yes;"); // an ODBC connection string to your database
+		nanodbc::connection conn(connstr);
+
+		insertCustomer(conn, "Jump", "Nako", "Red", "small", "10", "Y", "tiny");
+		return EXIT_SUCCESS;
+	}
+	catch (std::exception& e)
+	{
+		std::cerr << e.what() << std::endl;
+		return EXIT_FAILURE;
+	}
+	*/
 	vector<Bird*> birds;
 	vector<Lake*> lakes;
 
