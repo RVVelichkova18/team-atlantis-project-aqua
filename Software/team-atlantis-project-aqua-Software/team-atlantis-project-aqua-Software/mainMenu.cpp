@@ -38,7 +38,7 @@ bool mainMenu(vector<Lake*>& lakes, vector<Bird*>& birds)
 		lakeMenu(lakes);
 		break;
 	case 3:
-		openWebsite(); // fix
+		openWebsite();
 		break;
 	case 4:
 		exit();

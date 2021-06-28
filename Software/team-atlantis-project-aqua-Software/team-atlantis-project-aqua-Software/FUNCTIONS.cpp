@@ -28,8 +28,7 @@ void checkManyInput(int& a)
 
 void openWebsite()
 {
-    ofstream webApplication;
-   webApplication.open("..Website\\index.html");
+    system("start https://atlantisproject.netlify.app/");
 }
 
 void exit()
