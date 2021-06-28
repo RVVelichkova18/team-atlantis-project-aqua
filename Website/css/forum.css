@@ -74,6 +74,10 @@ a:hover{
   text-decoration: underline;
 }
 
+li {
+  list-style-type: none;
+}
+
 #wrapper, #loginform{
   margin: 3% auto 0 auto;
   background: #bcc0c0;
@@ -207,17 +211,20 @@ a:hover{
   width: 13vh;
   margin-right: 1vw;
   height: 3vh;
-  padding: 0.3% 3% 3% 3%;
+  /* padding: 0.3% 3% 3% 3%; */
   border: none;
   background-color: #eb4040;
   border-radius: 10px;
-  margin-top: 1.3vh;
+  margin-top: 1.7vh;
+  display: grid;
 }
 
 #logout{
   font-size: 15px;
   text-decoration: none;
   color: white;
+  align-self: center;
+  justify-self: center;
 }
 
 #forumNav{
