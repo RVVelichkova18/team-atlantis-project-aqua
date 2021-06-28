@@ -30,8 +30,7 @@
 - *Email* : [*AABurmov18@codingburgas.bg*](mailto:AABurmov18@codingburgas.bg)
 
 ## Preview of the website 💻 <a name = "preview"></a>
-[<img src = "https://cdn.discordapp.com/attachments/851885485696876574/858798647839686656/unknown.png" width = "100%">](https://atlantisproject.netlify.app/){:target="_blank" rel="noopener"}
-
+[<img src = "https://cdn.discordapp.com/attachments/851885485696876574/858798647839686656/unknown.png" width = "100%">](https://atlantisproject.netlify.app/)
 ## Resume of the project 📱 <a name = "resume"></a>
 We have created a website, app and database that help people learn and exchange ideas about lakes, endangered birds and their habitats.
 
