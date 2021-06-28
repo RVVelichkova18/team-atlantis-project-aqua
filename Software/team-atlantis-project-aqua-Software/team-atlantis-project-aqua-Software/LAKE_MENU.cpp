@@ -37,17 +37,17 @@ bool lakeMenu(vector<Lake*>& lakes)
 
 	case 1:
 		lake = enterOrganicLake();
-		lakes.push_back(lake);
+		checkLakeInput(lakes, lake);
 		break;
 
 	case 2:
 		lake = enterGlacialLake();
-		lakes.push_back(lake);
+		checkLakeInput(lakes, lake);
 		break;
 
 	case 3:
 		lake = enterLandslideLake();
-		lakes.push_back(lake);
+		checkLakeInput(lakes, lake);
 		break;
 
 	default:

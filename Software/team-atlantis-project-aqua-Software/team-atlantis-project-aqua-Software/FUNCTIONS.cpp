@@ -10,40 +10,6 @@
 
 using namespace std;
 
-void checkBirdInput(vector<Bird*>& birds, Bird* bird)
-{
-    std::cout << "============Edit&Delete============" << std::endl
-        << "|Are you sure you want to continue?" << std::endl
-        << "|Press: 0 to continue." << std::endl
-        << "|Press: 1 to edit input." << std::endl
-        << "|Press: 2 to delete input." << std::endl
-        << "===================================" << std::endl;
-
-    int option;
-    cin >> option;
-    checkManyInput(option);
-
-    switch (option)
-    {
-    case 0:
-        birds.push_back(bird);
-        break;
-
-    case 1:
-        delete bird;
-        bird = enterSwimmingBird();
-        birds.push_back(bird);
-        break;
-
-    case 2:
-        delete bird;
-        break;
-
-    default:
-        incorrectInput();
-    }
-}
-
 void checkManyInput(int& a)
 {
     while (1)
@@ -82,6 +48,41 @@ void incorrectInput()
 }
 
 // ======================= BIRD =============================
+
+void checkBirdInput(vector<Bird*>& birds, Bird* bird)
+{
+    cout << endl;
+    std::cout << "============Edit&Delete============" << std::endl
+        << "|Are you sure you want to continue?" << std::endl
+        << "|Press: 0 to continue." << std::endl
+        << "|Press: 1 to edit input." << std::endl
+        << "|Press: 2 to delete input." << std::endl
+        << "===================================" << std::endl;
+
+    int option;
+    cin >> option;
+    checkManyInput(option);
+
+    switch (option)
+    {
+    case 0:
+        birds.push_back(bird);
+        break;
+
+    case 1:
+        delete bird;
+        bird = enterSwimmingBird();
+        birds.push_back(bird);
+        break;
+
+    case 2:
+        delete bird;
+        break;
+
+    default:
+        incorrectInput();
+    }
+}
 
 JumpingBird* enterJumpingBird()                       
 {
@@ -159,6 +160,41 @@ RunningBird* enterRunningBird()
 }
 
 // ======================= LAKE =============================
+
+void checkLakeInput(vector<Lake*>& lakes, Lake* lake)
+{
+    cout << endl;
+    std::cout << "============Edit&Delete============" << std::endl
+        << "|Are you sure you want to continue?" << std::endl
+        << "|Press: 0 to continue." << std::endl
+        << "|Press: 1 to edit input." << std::endl
+        << "|Press: 2 to delete input." << std::endl
+        << "===================================" << std::endl;
+
+    int option;
+    cin >> option;
+    checkManyInput(option);
+
+    switch (option)
+    {
+    case 0:
+        lakes.push_back(lake);
+        break;
+
+    case 1:
+        delete lake;
+        lake = enterOrganicLake();
+        lakes.push_back(lake);
+        break;
+
+    case 2:
+        delete lake;
+        break;
+
+    default:
+        incorrectInput();
+    }
+}
 
 
 LandslideLake* enterLandslideLake()
