@@ -32,15 +32,15 @@ void Lake::setDepth(std::string depth)
 
 	if (depth == "normal")
 	{
-		this->yearsOld = 8;
+		this->yearsOld = 5;
 	}
 	else if (depth == "average")
 	{
-		this->yearsOld = 18;
+		this->yearsOld = 25;
 	}
 	else if (depth == "deep")
 	{
-		this->yearsOld = 28;
+		this->yearsOld = 50;
 	}
 }
 

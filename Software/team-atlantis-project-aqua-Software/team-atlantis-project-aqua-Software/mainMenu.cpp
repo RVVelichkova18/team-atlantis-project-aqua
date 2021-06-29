@@ -56,12 +56,17 @@ int main()
 	
 	try
 	{
-		nanodbc::string connstr = NANODBC_TEXT("DRIVER={ODBC Driver 17 for SQL Server};SERVER=(localdb)\\MSSQLLocalDB;DATABASE=team-atlantis-project-aqua;Trusted_Connection=yes;"); // an ODBC connection string to your database
+		nanodbc::string connstr = NANODBC_TEXT(
+			"DRIVER={ODBC Driver 17 for SQL Server};"
+			"SERVER=DESKTOP-739IURR\\SQLEXPRESS;"
+			"DATABASE=team-atlantis-project-aqua;"
+			"Trusted_Connection=yes;"
+		); // an ODBC connection string to the Database
 		nanodbc::connection conn(connstr);
 
-		insertCustomer(conn, "Swim", "Colibri", "Green", "middle", "18", "Y", "tiny");
-		insertCustomer(conn, "Run", "Colibri", "Green", "middle", "18", "Y", "tiny");
-		insertCustomer(conn, "Jump", "Colibri", "Green", "middle", "18", "Y", "tiny");
+		insertBird(conn, "Swim", "Colibri", "Green", "middle", 18, "Y", "tiny");
+		insertBird(conn, "Run", "Colibri", "Green", "middle", 18, "Y", "tiny");
+		insertBird(conn, "Jump", "Colibri", "Green", "middle", 18, "Y", "tiny");
 		//return EXIT_SUCCESS;
 	}
 	catch (std::exception& e)

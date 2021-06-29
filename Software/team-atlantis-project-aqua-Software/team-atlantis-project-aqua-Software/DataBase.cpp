@@ -14,7 +14,7 @@
 
 using namespace std;
 
-void insertCustomer(nanodbc::connection conn, string ability, string name, string color, string size, string yersoflife, string migration, string sizeofeggs)
+void insertBird(nanodbc::connection conn, string ability, string name, string color, string size, int yersoflife, string migration, string sizeofeggs)
 {
     nanodbc::statement statement(conn);
     nanodbc::prepare(statement, NANODBC_TEXT(R"(
@@ -34,7 +34,7 @@ void insertCustomer(nanodbc::connection conn, string ability, string name, strin
     statement.bind(1, name.c_str());
     statement.bind(2, color.c_str());
     statement.bind(3, size.c_str());
-    statement.bind(4, yersoflife.c_str());
+    statement.bind(4, (int*)yersoflife);
     statement.bind(5, migration.c_str());
     statement.bind(6, sizeofeggs.c_str());
     execute(statement);
