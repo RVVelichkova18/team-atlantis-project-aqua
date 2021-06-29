@@ -64,9 +64,9 @@ int main()
 		); // an ODBC connection string to the Database
 		nanodbc::connection conn(connstr);
 
-		insertBird(conn, "Swim", "Colibri", "Green", "middle", 18, "Y", "tiny");
-		insertBird(conn, "Run", "Colibri", "Green", "middle", 18, "Y", "tiny");
-		insertBird(conn, "Jump", "Colibri", "Green", "middle", 18, "Y", "tiny");
+		insertBird(conn, "Swim", "Colibri", "Green", "middle", "18", "Y", "tiny");
+		insertBird(conn, "Run", "Colibri", "Green", "middle", "18", "Y", "tiny");
+		insertBird(conn, "Jump", "Colibri", "Green", "middle", "18", "Y", "tiny");
 		//return EXIT_SUCCESS;
 	}
 	catch (std::exception& e)

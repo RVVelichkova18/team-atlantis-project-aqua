@@ -8,4 +8,4 @@
 #include "BIRD_STRUCTURE.h"
 #include "BIRD_CLASS.h"
 
-void insertBird(nanodbc::connection conn, std::string ability, std::string name, std::string color, std::string size, int yersoflife, std::string migration, std::string sizeofeggs);
+void insertBird(nanodbc::connection conn, std::string ability, std::string name, std::string color, std::string size, std::string yersoflife, std::string migration, std::string sizeofeggs);
